@@ -18,6 +18,8 @@
   endif;
 ?>
 
+<?php get_template_part( 'template-parts/paragraph' )?>
+
 <div>
   <?php
     if(get_field('enable_content')):
