@@ -1,0 +1,1 @@
+//javasctipt functions
