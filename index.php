@@ -4,7 +4,7 @@
  *
  * @package startertheme
  */
- ?>
+?>
 
 <?php get_header(); ?>
 
@@ -27,9 +27,5 @@
     endif;
   ?>
 </div>
-	
-		  
-</p>
-
 
 <?php get_footer(); ?>
