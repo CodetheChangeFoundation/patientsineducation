@@ -9,6 +9,7 @@ require get_template_directory() . '/inc/cleanup.php';
 require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/custom-fields/paragraph.php';
+require get_template_directory() . '/inc/bs4navwalker.php';
 
 function pie_scripts_enqueue() {
   wp_enqueue_style('piestyle', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
