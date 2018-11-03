@@ -1,0 +1,26 @@
+#customize-controls .control-section-bb_mobile_application .accordion-section-title:hover,
+#customize-controls .control-section-bb_mobile_application .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+.control-section-bb_mobile_application .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-bb_mobile_application .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+/* ---------Customizer--------- */
+a.button.button-secondary.alignright {
+  background: #006799;
+  color: #fff;
+  border: solid 1px #0073aa;
+  font-size: 15px;
+  padding: 0 20px;
+}
+a.button.button-secondary.alignright:hover {
+	background: #0073aa;
+}

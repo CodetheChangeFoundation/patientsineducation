@@ -1,0 +1,1 @@
+2018/10/30 17:18:26 [error] 34#0: *1 connect() to unix:/var/run/php-fpm.sock failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "patientsinedudemo.local"
