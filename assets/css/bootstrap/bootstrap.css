@@ -4297,8 +4297,6 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
-  text-decoration: underline;
-
 }
 
 .navbar-light .navbar-toggler {
