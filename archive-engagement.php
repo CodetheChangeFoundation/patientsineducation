@@ -1,13 +1,19 @@
+<?php session_start(); ?>
+
 <?php get_header(); ?>
 
-<div class="project-grid">
+	<div class="project-grid accordion" id="accordionExample">
 
 <div class="row">
 
 
 		<?php if( have_posts() ): ?>
 
+			<?php $_SESSION["count"] = 0; ?>
+
 			<?php while( have_posts() ): the_post(); ?>
+
+				<?php $_SESSION["count"]++; ?>
 
 				<?php get_template_part('content', 'archive'); ?>
 

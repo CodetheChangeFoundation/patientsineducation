@@ -1,8 +1,25 @@
+<?php session_start(); ?>
+<?php if ($_SESSION["count"]%3 == 1) {
+				$order_lg = $_SESSION["count"] + 3;
+			}
+			elseif ($_SESSION["count"]%3 == 2) {
+				$order_lg = $_SESSION["count"] + 2;
+			}
+			elseif ($_SESSION["count"]%3 == 0) {
+				$order_lg = $_SESSION["count"] + 1;
+			}?>
+
+<?php if ($_SESSION["count"]%2 == 1) {
+				$order_md = $_SESSION["count"] + 2;
+			}
+			elseif ($_SESSION["count"]%2 == 0) {
+				$order_md = $_SESSION["count"] + 1;
+			} ?>
 
 
 		<?php if( has_post_thumbnail() ): ?>
 
-			<div class="project-container mb-4 order-1 col-12 col-md-6 col-lg-4">
+			<div class="project-container mb-4 col-12 col-md-6 col-lg-4 order-md-<?php echo $_SESSION["count"]; ?> order-lg-<?php echo $_SESSION["count"]; ?>">
 				 <a class="show-more-button" data-toggle="collapse" href="#<?php echo $post->post_name; ?>" role="button"
 				 aria-expanded="false" aria-controls="<?php echo $post->post_name; ?>">
 						 <div class="project-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
@@ -13,14 +30,14 @@
 						</div>
 				 </a>
 			</div>
-			<div class="col-12 order-md-3 order-lg-4 collapse" id="<?php echo $post->post_name; ?>">
-				 <div id="projBody1" class="mb-4 card card-body">
+			<div class="col-12 collapse order-md-<?php echo $order_md; ?> order-lg-<?php echo $order_lg; ?>" data-parent="#accordionExample" id="<?php echo $post->post_name; ?>">
+				 <div class="mb-4 card card-body">
 						<p class="closeIcon" role="button"> &times; </p>
-						<h3 class="text-secondary pr-5"><?php the_title(); ?></h3>
-						<h5 class="mb-0"><?php the_excerpt(); ?></h5>
+						<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
+						<h5 class="mb-0 text-light-secondary"><?php the_excerpt(); ?></h5>
 						<p class="lead"><?php $array = explode('.',$text); ?><?php echo $array[0]; ?></p>
-						<p><?php the_content(); ?></p>
-						<p class="m-0"><a class="btn btn-outline-secondary" alt="SAR Repo" target="_blank">Learn More</a></p>
+						<span class="text-description"><?php the_content(); ?></span>
+						<p class="m-0"><a class="btn btn-outline-secondary text-black-light text-weight-bold" alt="SAR Repo" target="_blank">Learn More</a></p>
 				 </div>
 			</div>
 
