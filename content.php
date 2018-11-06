@@ -35,9 +35,8 @@
 						<p class="closeIcon" role="button"> &times; </p>
 						<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
 						<h5 class="mb-0 text-light-secondary"><?php the_excerpt(); ?></h5>
-						<p class="lead"><?php $array = explode('.',$text); ?><?php echo $array[0]; ?></p>
 						<span class="text-description"><?php the_content(); ?></span>
-						<p class="m-0"><a class="btn btn-outline-secondary text-black-light text-weight-bold" alt="SAR Repo" target="_blank">Learn More</a></p>
+						<p class="m-0"><a class="btn text-black-light text-weight-bold" style="background: #FF6969; border-radius: 3px; color: #2E2A2B !important;" alt="SAR Repo" target="_blank">Learn More</a></p>
 				 </div>
 			</div>
 
