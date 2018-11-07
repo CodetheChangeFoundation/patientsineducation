@@ -32,7 +32,7 @@
 
 .project-container .project-image:after {
   content: "Learn More";
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   position: absolute;
   left: 0;
   right: 0;
@@ -67,7 +67,7 @@
 }
 
 .text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description{
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   color: #525252 !important;
 }
