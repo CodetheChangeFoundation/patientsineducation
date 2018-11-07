@@ -16,7 +16,6 @@
 				$order_md = $_SESSION["count"] + 1;
 			} ?>
 
-
 		<?php if( has_post_thumbnail() ): ?>
 
 			<div class="project-container mb-4 col-12 col-md-6 col-lg-4 order-md-<?php echo $_SESSION["count"]; ?> order-lg-<?php echo $_SESSION["count"]; ?>">
@@ -35,7 +34,7 @@
 						<p class="closeIcon" role="button"> &times; </p>
 						<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
 						<h5 class="mb-0 text-light-secondary"><?php the_excerpt(); ?></h5>
-						<span class="text-description"><?php the_content(); ?></span>
+						<span class="text-lead"><?php the_field('leading_sentence'); ?><span class="text-description"><?php the_field('paragraph'); ?></span></span>
 						<p class="m-0"><a class="btn text-black-light text-weight-bold" style="background: #FF6969; border-radius: 3px; color: #2E2A2B !important;" alt="SAR Repo" target="_blank">Learn More</a></p>
 				 </div>
 			</div>
