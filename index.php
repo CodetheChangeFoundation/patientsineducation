@@ -19,6 +19,7 @@
 ?>
 
 <?php get_template_part( 'template-parts/paragraph' )?>
+<?php get_template_part( 'template-parts/help-section' )?>
 
 <div>
   <?php
