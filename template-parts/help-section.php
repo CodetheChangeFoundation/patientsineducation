@@ -11,10 +11,10 @@
         <?php if(get_field('help_section_title')): ?>
             <h1 id="help-section-title"><?php the_field('help_section_title') ?></h1>
         <?php endif ?>
-        <div class="row m-3 w-100">
+        <div class="row">
           <div class="col-md-4 col-xs-12">
             <?php if(get_field('hs_left_column_image')): ?>
-              <img src="<?php echo get_field('hs_left_column_image')['url']; ?>" class="img-fluid rounded-circle"/>
+              <div style="background-image: url(<?php echo get_field('hs_left_column_image')['url']; ?>)" class="help-section-image rounded-circle"></div>
             <?php endif ?>
 
             <?php if(get_field('hs_left_column_title')): ?>
@@ -28,7 +28,7 @@
 
           <div class="col-md-4 col-xs-12">
             <?php if(get_field('hs_middle_column_image')): ?>
-              <img src="<?php echo get_field('hs_middle_column_image')['url']; ?>" class="img-fluid rounded-circle"/>
+              <div style="background-image: url(<?php echo get_field('hs_middle_column_image')['url']; ?>)" class="help-section-image rounded-circle"></div>
             <?php endif ?>
 
             <?php if(get_field('hs_middle_column_title')): ?>
@@ -42,7 +42,7 @@
 
           <div class="col-md-4 col-xs-12">
             <?php if(get_field('hs_right_column_image')): ?>
-              <img src="<?php echo get_field('hs_right_column_image')['url']; ?>" class="img-fluid rounded-circle"/>
+              <div style="background-image: url(<?php echo get_field('hs_right_column_image')['url']; ?>)" class="help-section-image rounded-circle"></div>
             <?php endif ?>
 
             <?php if(get_field('hs_right_column_title')): ?>
