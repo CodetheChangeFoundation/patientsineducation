@@ -12,3 +12,23 @@
   background-position: center;
   background-size:cover;
 }
+
+.help-section {
+  padding-top: 35px;
+  background-color: #F9F9F9;
+}
+
+#help-section-wave {
+  height: 150px;
+  overflow: hidden;
+}
+
+#help-section-wave svg {
+  height: 100%;
+  width: 100%;
+}
+
+#help-section-wave svg path{
+  stroke: none;
+  fill: #F9F9F9;
+}
