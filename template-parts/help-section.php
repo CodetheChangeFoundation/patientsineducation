@@ -15,7 +15,7 @@
         <section>
           <div class="row">
             <?php
-            $positions = array('right', 'middle', 'left');
+            $positions = array('left', 'middle', 'right');
             foreach ($positions as $position) { ?>
               <div class="col-md-4 col-xs-12">
                 <?php if(get_field('hs_' . $position . '_column_image')): ?>

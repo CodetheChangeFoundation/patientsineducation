@@ -27,7 +27,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_5be55ad2b81e6',
 			'label' => 'Help Section Title',
 			'name' => 'help_section_title',
-			'type' => 'wysiwyg',
+			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => array(
@@ -45,10 +45,10 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'default_value' => '',
-			'tabs' => 'all',
-			'toolbar' => 'full',
-			'media_upload' => 1,
-			'delay' => 0,
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
 		),
 		array(
 			'key' => 'field_5be552ef78336',
