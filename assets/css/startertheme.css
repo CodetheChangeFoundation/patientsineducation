@@ -2,10 +2,11 @@
 
 #help-section-title {
   text-align: left;
+  padding-bottom: 30px;
 }
 
 .help-section-image {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   height: 200px;
   width: 200px;
   background-repeat: no-repeat;
