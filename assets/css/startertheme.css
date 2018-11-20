@@ -18,11 +18,6 @@
   overflow: hidden;
 }
 
-#help-section-wave svg {
-  height: 100%;
-  width: 100%;
-}
-
 #help-section-wave svg path{
   stroke: none;
   fill: #F9F9F9;
