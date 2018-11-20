@@ -6,10 +6,10 @@
  */
 
   if(get_field('enable_help_section_cf')): ?>
-    <div class="help-section">
+    <div class="help-section pt-4">
       <div class="container text-center">
         <?php if(get_field('help_section_title')): ?>
-            <h1 id="help-section-title"><?php the_field('help_section_title') ?></h1>
+            <h1 class="text-left pb-4"><?php the_field('help_section_title') ?></h1>
         <?php endif ?>
 
         <section>

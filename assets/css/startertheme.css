@@ -1,10 +1,5 @@
 /*  HELP SECTION */
 
-#help-section-title {
-  text-align: left;
-  padding-bottom: 30px;
-}
-
 .help-section-image {
   margin: 0 auto 20px;
   height: 200px;
@@ -15,7 +10,6 @@
 }
 
 .help-section {
-  padding-top: 35px;
   background-color: #F9F9F9;
 }
 
