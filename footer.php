@@ -40,10 +40,9 @@
     </div>
     <div class="row px-5">
       <div class="col-12 text-center">
-        © <?php echo date("Y"); ?> Patients In Education. Developed by Code the Change Foundation.
+        © <?php echo date("Y"); ?> Patients In Education. Developed by <a href="http://codethechange.ca">Code the Change Foundation</a>.
       </div>
     </div>
-  <?php wp_footer() ?>
   </div>
 </footer>
     
