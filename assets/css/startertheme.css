@@ -1,3 +1,4 @@
+/* Engagement */
 .mt {
   margin-top: 28rem;
 }
@@ -64,7 +65,7 @@
   border-radius: 0.6rem;
 }
 
-.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description{
+.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   color: #525252 !important;
@@ -116,4 +117,81 @@
 .closeIcon:hover {
   color: #FF6969;
   cursor: pointer;
+}
+
+
+/* About Us */
+.text-large, .title-1, .title-2, .title-3, .title-4 {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  color: #525252 !important;
+}
+
+.text-large {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  margin-bottom: 4.44rem;
+}
+
+.col-12, .col-md-6, .col-lg-6 {
+  margin-bottom: 4.44rem;
+}
+
+.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+  border-radius: 3rem;
+  position: absolute;
+  /* width: 42.8% !important; */
+  height: 16.3rem;
+  opacity: 0.75;
+  background-size: cover;
+}
+
+.thumbnail-1, .thumbnail-3 {
+
+}
+
+.thumbnail-2, .thumbnail-4 {
+
+}
+
+.content-container-1, .content-container-2, .content-container-3,.content-container-4 {
+  position: relative;
+  /* width: 42.8% !important; */
+  height: 16.3rem;
+  border: 0.125rem solid #525252;
+  box-sizing: border-box;
+  border-radius: 3rem;
+}
+
+.content-container-1, .content-container-3 {
+
+}
+
+.content-container-2, .content-container-4 {
+
+}
+
+.title-1, .title-2, .title-3, .title-4 {
+  position: absolute;
+  top: 2.25rem;
+}
+
+.title-1, .title-3, .content-text-1, .content-text-3 {
+  left: 12.6%;
+}
+
+.title-2, .title-4, .content-text-2, .content-text-4 {
+  right: 12.6%;
+}
+
+.content-text-1, .content-text-2, .content-text-3, .content-text-4 {
+  position: absolute;
+  top: 34.48%;
+  width: 78.74% !important;
+  font-family: 'Oxygen', sans-serif;
+  color: #525252 !important;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
 }
