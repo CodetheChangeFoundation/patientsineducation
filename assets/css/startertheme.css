@@ -1,3 +1,30 @@
+/*  HELP SECTION */
+
+.help-section-image {
+  margin: 0 auto 20px;
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.help-section {
+  background-color: #F9F9F9;
+}
+
+#help-section-wave {
+  height: 150px;
+  overflow: hidden;
+}
+
+#help-section-wave svg path {
+  stroke: none;
+  fill: #F9F9F9;
+}
+
+/* */
+
 .mt {
   margin-top: 28rem;
 }
@@ -64,7 +91,7 @@
   border-radius: 0.6rem;
 }
 
-.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description{
+.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   color: #525252 !important;
