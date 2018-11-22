@@ -137,13 +137,25 @@
   margin-bottom: 4.44rem;
 }
 
+.row-odd {
+  left: -117px;
+}
+
+.row-even {
+  right: -117px;
+}
+
 .thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
   border-radius: 3rem;
-  position: absolute;
-  /* width: 42.8% !important; */
+  position: relative;
   height: 16.3rem;
   opacity: 0.75;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  width: 100%;
+  overflow: visible;
 }
 
 .thumbnail-1, .thumbnail-3 {
@@ -164,11 +176,11 @@
 }
 
 .content-container-1, .content-container-3 {
-
+  left: 3.5rem;
 }
 
 .content-container-2, .content-container-4 {
-
+  right: 3.5rem;
 }
 
 .title-1, .title-2, .title-3, .title-4 {
