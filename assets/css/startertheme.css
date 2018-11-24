@@ -3,7 +3,7 @@
 .help-section-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   height: 200px;
   margin: 0 auto 20px;
   width: 200px;
@@ -30,7 +30,7 @@
 .four-icon-section-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   height: 100px;
   width: 100px;
 }
