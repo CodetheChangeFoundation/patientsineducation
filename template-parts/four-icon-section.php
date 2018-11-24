@@ -6,13 +6,13 @@
  */
 
   if(get_field('enable_four_icon_section_cf')): ?>
-    <div id="four-icon-section-wave">
+    <div class="four-icon-section-wave">
       <svg viewBox="0 0 500 110" preserveAspectRatio="none" class="w-100 h-100">
-        <path d="M 0 50 Q 83 100 167 50 Q 250 0 333 50 Q 417 100 500 50 L500.00,150.00 L0,150.00 Z"></path>
+        <path class="section-wave" d="M 0 50 Q 83 100 167 50 Q 250 0 333 50 Q 417 100 500 50 L500.00,150.00 L0,150.00 Z"></path>
       </svg>
     </div>
 
-    <div class="four-icon-section pb-4">
+    <div class="light-grey pb-4">
       <div class="container text-center">
         <section>
           <?php

@@ -6,7 +6,7 @@
  */
 
   if(get_field('enable_help_section_cf')): ?>
-    <div class="help-section pt-4">
+    <div class="light-grey pt-4">
       <div class="container text-center">
         <?php if(get_field('help_section_title')): ?>
             <h1 class="text-left pb-4"><?php the_field('help_section_title') ?></h1>
@@ -36,9 +36,9 @@
       </div>
     </div>
 
-    <div id="help-section-wave">
+    <div class="help-section-wave">
       <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="w-100 h-100">
-        <path d="M 0 50 Q 83 100 167 50 Q 250 0 333 50 Q 417 100 500 50 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path class="section-wave" d="M 0 50 Q 83 100 167 50 Q 250 0 333 50 Q 417 100 500 50 L500.00,0.00 L0.00,0.00 Z"></path>
       </svg>
     </div>
 
