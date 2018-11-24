@@ -24,14 +24,14 @@
               $horizontal_positions = array('left','right');
               foreach ($horizontal_positions as $horizontal_position) { ?>
 
-                <div class="col-md-6">
-                  <div>
+                <div class="col-md-6 mb-4">
+                  <div class="image-title-cointainer text-left">
                     <?php if(get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')): ?>
-                      <div style="background-image: url(<?php echo get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')['url']; ?>)" class="four-icon-section-image rounded-circle"></div>
+                      <div  class="four-icon-section-image rounded-circle inline-vertical-middle" style="background-image: url(<?php echo get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')['url']; ?>)"></div>
                     <?php endif ?>
 
                     <?php if(get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title')): ?>
-                        <h2><?php the_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title') ?></h2>
+                        <h2 class="inline-vertical-middle"><?php the_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title') ?></h2>
                     <?php endif ?>
                   </div>
 

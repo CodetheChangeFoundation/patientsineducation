@@ -33,11 +33,21 @@
   background-size:cover;
   height: 100px;
   width: 100px;
+
 }
 
 .four-icon-section-wave {
   height: 110px;
   overflow: hidden;
+}
+
+.image-title-cointainer {
+  padding-left: 22%;
+}
+
+.inline-vertical-middle {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* */
