@@ -1,26 +1,52 @@
 /*  HELP SECTION */
 
 .help-section-image {
-  margin: 0 auto 20px;
-  height: 200px;
-  width: 200px;
-  background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 0 auto 20px;
+  width: 200px;
 }
 
-.help-section {
-  background-color: #F9F9F9;
-}
-
-#help-section-wave {
+.help-section-wave {
   height: 150px;
   overflow: hidden;
 }
 
-#help-section-wave svg path {
-  stroke: none;
+/* HELP AND FOUR ICON SECTION */
+
+.light-grey {
+  background-color: #F9F9F9;
+}
+
+.section-wave {
   fill: #F9F9F9;
+  stroke: none;
+}
+
+/*  FOUR ICON SECTION */
+
+.four-icon-section-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.four-icon-section-wave {
+  height: 110px;
+  overflow: hidden;
+}
+
+.image-title-cointainer {
+  padding-left: 22%;
+}
+
+.inline-vertical-middle {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* */
@@ -56,20 +82,20 @@
 }
 
 .project-container .project-image:after {
-  content: "Learn More";
-  font-family: "Quicksand", sans-serif;
-  position: absolute;
-  left: 0;
-  right: 0;
+  align-items: center;
   bottom: 0;
-  top: 0;
   color: #333;
+  content: "Learn More";
+  display: flex;
+  font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  left: 0;
   opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .project-container .project-image:hover:before {
@@ -83,18 +109,18 @@
 }
 
 .project-container .project-image .project-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #F9F9F9;
   border-radius: 0.6rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
+  color: #525252 !important;
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
-  color: #525252 !important;
 }
 
 .text-black {
@@ -137,7 +163,7 @@
   font-size: 2.5em;
   position: absolute;
   right: 1rem;
-  top: 0rem;
+  top: 0;
 }
 
 .closeIcon:hover {

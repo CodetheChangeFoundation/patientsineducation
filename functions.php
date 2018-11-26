@@ -10,6 +10,7 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/custom-fields/paragraph.php';
 require get_template_directory() . '/custom-fields/help-section.php';
+require get_template_directory() . '/custom-fields/four-icon-section.php';
 require get_template_directory() . '/custom-fields/project-description.php';
 
 add_shortcode( 'get_icon_url', function( $atts ){
