@@ -8,13 +8,24 @@
 
 <?php get_header(); ?>
 
-<h1>This is the index.</h1>
 <?php
   if(have_posts()):
-    while(have_posts()): the_post(); ?>
-    <h1><?php echo the_title(); ?></h1>
-    <p><?php echo the_content(); ?></p>
-    <?php endwhile;
+    while(have_posts()): the_post(); 
+      /* Display the page title and under-navbar styling only if it's not the home page */
+      if(!is_front_page()): ?>
+        <div class="container-fluid m-0">
+		  <hr />
+          <div class="pie-under-navbar row px-5 py-4">
+            <div class="col-12 text-center">
+              <h2><?php echo the_title(); ?></h2>
+              <h5><?php echo the_content(); ?></h5>
+            </div>
+          </div>    
+        </div>  
+      <?php else: ?>
+        <p><?php echo the_content(); ?></p>	  
+      <?php endif;  
+    endwhile;
   endif;
 ?>
 
