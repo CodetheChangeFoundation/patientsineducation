@@ -4,10 +4,11 @@
  *
  * @package startertheme
  */
- ?>
+?>
 
 <?php get_header(); ?>
 
+<h1>This is the index.</h1>
 <?php
   if(have_posts()):
     while(have_posts()): the_post(); ?>
@@ -18,6 +19,9 @@
 ?>
 
 <?php get_template_part( 'template-parts/paragraph' )?>
+<?php get_template_part( 'template-parts/help-section' )?>
+<?php get_template_part( 'template-parts/carousel' )?>
+<?php get_template_part( 'template-parts/directors' )?>
 
 <div>
   <?php
@@ -28,8 +32,5 @@
     endif;
   ?>
 </div>
-
-<?php get_template_part( 'template-parts/carousel' ); ?>
-
 
 <?php get_footer(); ?>

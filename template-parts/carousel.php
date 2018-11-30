@@ -6,9 +6,6 @@
  */
  ?>
 
-<!-- carousel -->
-<!-- <?php var_dump( acf_photo_gallery('home_page_gallery', $post->ID));?> -->
-
 <?php
 $image1 = get_field('slider_1');
 $image2 = get_field('slider_2');
@@ -19,8 +16,6 @@ $image5 = get_field('slider_5');
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 ?>
-<!-- <?php var_dump($image1);?> -->
-
 
 <div id="carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators carousel-indicators--round">
