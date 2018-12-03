@@ -1523,13 +1523,13 @@ pre code {
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  vertical-align: middle;
+  border-top: 1px solid #525252;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 2px solid #525252;
 }
 
 .table tbody + tbody {
@@ -2435,15 +2435,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-info {
-  color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  color: #2E2A2B;
+  background-color: #FF6969;
+  border-color: #FF6969;
 }
 
 .btn-info:hover {
-  color: #fff;
-  background-color: #138496;
-  border-color: #117a8b;
+  color: #2E2A2B;
+  background-color: #FF6969;
+  border-color: #FF6969;
 }
 
 .btn-info:focus, .btn-info.focus {
@@ -2451,9 +2451,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-info.disabled, .btn-info:disabled {
-  color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  color: #2E2A2B;
+  background-color: #FF6969;
+  border-color: #FF6969;
 }
 
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
@@ -6161,7 +6161,7 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 2px solid #525252 !important;
 }
 
 .border-top {
