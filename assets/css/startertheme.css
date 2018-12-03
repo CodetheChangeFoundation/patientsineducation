@@ -49,6 +49,21 @@
   vertical-align: middle;
 }
 
+/* ORGANIZATIONS SECTION */
+
+.organizations-section-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  height: 50px;
+  width: 50px;
+}
+
+.max-width-650 {
+  max-width:650px;
+}
+
 /* */
 
 .mt {

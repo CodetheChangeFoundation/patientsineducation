@@ -11,6 +11,7 @@ require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/custom-fields/paragraph.php';
 require get_template_directory() . '/custom-fields/help-section.php';
 require get_template_directory() . '/custom-fields/four-icon-section.php';
+require get_template_directory() . '/custom-fields/organizations-section.php';
 require get_template_directory() . '/custom-fields/project-description.php';
 
 function pie_scripts_enqueue() {
