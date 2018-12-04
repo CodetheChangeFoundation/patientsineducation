@@ -14,7 +14,7 @@
       /* Display the page title and under-navbar styling only if it's not the home page */
       if(!is_front_page()): ?>
         <div class="container-fluid m-0">
-		  <hr />
+          <hr />
           <div class="pie-under-navbar row px-5 py-4">
             <div class="col-12 text-center">
               <h2><?php echo the_title(); ?></h2>
@@ -23,7 +23,7 @@
           </div>    
         </div>  
       <?php else: ?>
-        <p><?php echo the_content(); ?></p>	  
+        <p><?php echo the_content(); ?></p>
       <?php endif;  
     endwhile;
   endif;
