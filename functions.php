@@ -12,6 +12,7 @@ require get_template_directory() . '/custom-fields/paragraph.php';
 require get_template_directory() . '/custom-fields/help-section.php';
 require get_template_directory() . '/custom-fields/four-icon-section.php';
 require get_template_directory() . '/custom-fields/project-description.php';
+require get_template_directory() . '/custom-fields/enable-contact-forms.php';
 
 add_shortcode( 'get_icon_url', function( $atts ){
     return get_template_directory_uri() . '/assets/icons/' . $atts['image'];

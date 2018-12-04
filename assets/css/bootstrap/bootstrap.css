@@ -400,6 +400,18 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+span.wpcf7-list-item {
+  display: block;
+  margin-left: 0;
+}
+
+.wpcf7-free-text {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding-top:2px;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -3908,7 +3920,9 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #525252;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .nav-tabs .nav-item {
@@ -3916,13 +3930,16 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link {
+  color: #ff6969;
+  font-size: 1.25rem;
+  font-weight: bold;
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #525252 #525252 #525252;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -3933,15 +3950,25 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #525252;
   background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  border-color: #525252 #525252 #fff;
 }
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+@media(max-width:1079px){
+  .nav-tabs{
+    border-bottom: 1px solid #fff;
+  }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    border-color: #525252 #525252 #525252;
+  }
 }
 
 .nav-pills .nav-link {
