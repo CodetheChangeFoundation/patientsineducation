@@ -1,5 +1,5 @@
 <?php
- /**
+/**
  * Code the Change template for the footer
  *
  * @package startertheme

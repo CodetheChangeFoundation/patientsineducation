@@ -4,7 +4,7 @@
  *
  * @package startertheme
  */
-?>
+ ?>
 
 <?php get_header(); ?>
 
@@ -19,6 +19,7 @@
 ?>
 
 <?php get_template_part( 'template-parts/paragraph' )?>
+<?php get_template_part( 'template-parts/help-section' )?>
 
 <div>
   <?php
@@ -29,5 +30,7 @@
     endif;
   ?>
 </div>
+
+
 
 <?php get_footer(); ?>
