@@ -34,7 +34,7 @@
           <a href=""><img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="fb-icon.png"]');?>" alt="Facebook" /></a>
           <a href="https://twitter.com/PatientsInEd"><img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="twitter-icon.png"]');?>" alt="Twitter" /></a><br>
           Email : patients.in.education@gmail.com<br>
-          <button type=“submit” class="btn btn-primary mt-2">Contact Us</button>
+          <a href="/contact-us/" class="btn btn-primary mt-2">Contact Us</a>
         </p>
       </div>
     </div>
@@ -44,6 +44,7 @@
       </div>
     </div>
   </div>
+<?php wp_footer() ?>
 </footer>
     
 </body>
