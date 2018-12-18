@@ -207,3 +207,32 @@
   font-weight: normal;
   line-height: 2rem;
 }
+
+.dot-1, .dot-3 {
+  position: relative;
+  left: -2.5rem;
+  top: -1rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-2, .dot-4 {
+  position: relative;
+  right: -2.5rem;
+  top: -1rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: linear-gradient(135deg, #69FFAE 0%, #E1FF69 100%);
+}
+
+.dot-1 {
+  background: linear-gradient(135deg, #6993FF 0%, #4BE4FA 100%);
+}
+
+.dot-3 {
+  background: linear-gradient(135deg, #B469FF 0%, #E169FF 100%);
+}
