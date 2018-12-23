@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-  <?php else: ?>
+  <?php elseif(get_the_title($ID)=='Contact Us'): ?>
     <div class="text-center">
       <a href="mailto:patients.in.education@gmail.com" class="btn btn-primary mb-2">Email Us</a>
     </div>
