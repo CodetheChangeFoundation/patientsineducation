@@ -409,7 +409,6 @@ span.wpcf7-list-item {
   background: transparent;
   border: none;
   border-bottom: 1px solid #000000;
-  padding-top:2px;
 }
 
 .lead {
@@ -3921,8 +3920,6 @@ input[type="button"].btn-block {
 
 .nav-tabs {
   border-bottom: 1px solid #525252;
-  padding-right: 5%;
-  padding-left: 5%;
 }
 
 .nav-tabs .nav-item {
