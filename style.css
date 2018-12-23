@@ -6,9 +6,21 @@ Author: Code the Change Foundation
 Author URI: http://codethechange.ca
 Description: Custom built theme for Patients in Education
 Version: 1.0.0
-Text Domain: startertheme
+Text Domain: patientsineducation
 
 */
+
+/* UNDER-NAVBAR */
+.pie-under-navbar {
+  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
+  background-size: 100% 100%;
+}
+
+.pie-under-navbar p {
+  line-height: 1.875rem;
+  padding: 1rem 15% 4rem;
+}
+
 
 /* FOOTER */
 .pie-footer {
