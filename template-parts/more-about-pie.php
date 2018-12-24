@@ -3,50 +3,26 @@
  * More About PIE template
  *
  * @package patientsineducation
- */
-$more_about_us_1 = get_field('more_about_us_1');
-$more_about_us_2 = get_field('more_about_us_2');
-$more_about_us_3 = get_field('more_about_us_3');
-$more_about_us_4 = get_field('more_about_us_4');
-  if($more_about_us_1): ?>
-    <div class="row row-odd position-relative">
-        <div class="thumbnail-1 col-12 col-md-6 col-lg-6 order-1" style="background-image: url(<?php echo $more_about_us_1['thumbnail']; ?>);"></div>
-        <div class="content-container-1 col-12 col-md-6 col-lg-6 order-2">
-          <span class="dot-1"></span>
-          <h3 class="font-weight-bold title-1"><?php echo $more_about_us_1['title']; ?></h1>
-          <p class="content-text-1"><?php echo $more_about_us_1['content']; ?></p>
-        </div>
-    </div>
-  <?php endif;
-  if($more_about_us_2): ?>
-    <div class="row row-even position-relative">
-        <div class="thumbnail-2 col-12 col-md-6 col-lg-6 order-3 order-md-4 order-lg-4" style="background-image: url(<?php echo $more_about_us_2['thumbnail']; ?>);"></div>
-        <div class="content-container-2 text-right col-12 col-md-6 col-lg-6 order-4 order-md-3 order-lg-3">
-          <span class="dot-2"></span>
-          <h3 class="font-weight-bold title-2"><?php echo $more_about_us_2['title']; ?></h1>
-          <p class="content-text-2"><?php echo $more_about_us_2['content']; ?></p>
-        </div>
-      </div>
-  <?php endif;
-  if($more_about_us_3): ?>
-    <div class="row row-odd position-relative">
-        <div class="thumbnail-3 col-12 col-md-6 col-lg-6 order-5" style="background-image: url(<?php echo $more_about_us_3['thumbnail']; ?>);"></div>
-        <div class="content-container-3 col-12 col-md-6 col-lg-6 order-6">
-          <span class="dot-3"></span>
-          <h3 class="font-weight-bold title-3"><?php echo $more_about_us_3['title']; ?></h1>
-          <p class="content-text-3"><?php echo $more_about_us_3['content']; ?></p>
-        </div>
-      </div>
-  <?php endif;
-  if($more_about_us_4): ?>
-    <div class="row row-even position-relative">
-        <div class="thumbnail-4 col-12 col-md-6 col-lg-6 order-7 order-md-8 order-lg-8" style="background-image: url(<?php echo $more_about_us_4['thumbnail']; ?>);"></div>
-        <div class="content-container-4 text-right col-12 col-md-6 col-lg-6 order-8 order-md-7 order-lg-7">
-          <span class="dot-4"></span>
-          <h3 class="font-weight-bold title-4"><?php echo $more_about_us_4['title']; ?></h1>
-          <p class="content-text-4"><?php echo $more_about_us_4['content']; ?></p>
-        </div>
-        <div class="w-100"></div>
-    </div>
-  <?php endif;
-?>
+ */ ?>
+ <div>
+   <h1 class="text-center font-weight-bold text-large">More About PIE</h1>
+ </div>
+<?php for ($x = 1; $x <= 4; $x++) {
+  if ($x%2 == 1) {
+    $row = "odd";
+  } elseif ($x%2 == 0) {
+    $row = "even";
+  }
+   $name_of_the_variable = "more_about_us_"."$x";
+   $$name_of_the_variable = get_field($name_of_the_variable);
+   if ($$name_of_the_variable): ?>
+     <div class="row row-<?php echo $row; ?> position-relative">
+         <div class="thumbnail-<?php echo $x; ?> col-12 col-md-6 col-lg-6 order-<?php echo 2*$x-1; ?> <?php if ($row == "even"){echo "order-md-".(string)(2*$x);}?> <?php if ($row == "even"){echo "order-lg-".(string)(2*$x);}?>" style="background-image: url(<?php echo $$name_of_the_variable['thumbnail']; ?>);"></div>
+         <div class="content-container-<?php echo $x; ?> col-12 col-md-6 col-lg-6 order-<?php echo 2*$x; ?> <?php if ($row == "even"){echo "order-md-".(string)(2*$x-1);}?> <?php if ($row == "even"){echo "order-lg-".(string)(2*$x-1);}?>">
+           <span class="dot-<?php echo $x; ?>"></span>
+           <h3 class="font-weight-bold title-<?php echo $x; ?>"><?php echo $$name_of_the_variable['title']; ?></h1>
+           <p class="content-text-<?php echo $x; ?>"><?php echo $$name_of_the_variable['content']; ?></p>
+         </div>
+     </div>
+   <?php endif;?>
+ <?php } ?>

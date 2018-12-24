@@ -121,6 +121,10 @@
 
 
 /* About Us */
+.mt-more {
+  margin-top: 93.5rem;
+}
+
 .text-large, .title-1, .title-2, .title-3, .title-4 {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
