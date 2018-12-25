@@ -29,6 +29,7 @@
   endif;
 ?>
 
+<?php get_template_part( 'template-parts/contact-forms' )?>
 <?php get_template_part( 'template-parts/paragraph' )?>
 <?php get_template_part( 'template-parts/help-section' )?>
 
