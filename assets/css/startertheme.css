@@ -80,3 +80,191 @@ li a {
     padding: 16px;
     text-decoration: none;
 }*/
+
+/*  HELP SECTION */
+
+.help-section-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 0 auto 20px;
+  width: 200px;
+}
+
+.help-section-wave {
+  height: 150px;
+  overflow: hidden;
+}
+
+/* HELP AND FOUR ICON SECTION */
+
+.light-grey {
+  background-color: #F9F9F9;
+}
+
+.section-wave {
+  fill: #F9F9F9;
+  stroke: none;
+}
+
+/*  FOUR ICON SECTION */
+
+.four-icon-section-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.four-icon-section-wave {
+  height: 110px;
+  overflow: hidden;
+}
+
+.image-title-cointainer {
+  padding-left: 22%;
+}
+
+.inline-vertical-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ORGANIZATIONS SECTION */
+
+.organizations-section-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  height: 3rem;
+  width: 3rem;
+}
+
+.max-width-650 {
+  max-width:650px;
+}
+
+/* */
+
+.mt {
+  margin-top: 28rem;
+}
+
+.project-container .project-image {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  min-width: 13.75rem;
+  max-width: 21.875rem;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.6rem;
+  border: 0.16rem solid #525252;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.project-container .project-image:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  border-radius: 0.6rem;
+}
+
+.project-container .project-image:after {
+  align-items: center;
+  bottom: 0;
+  color: #333;
+  content: "Learn More";
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-container .project-image:hover:before {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.project-container .project-image:hover:after {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.project-container .project-image .project-description {
+  background-color: #F9F9F9;
+  border-radius: 0.6rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
+  color: #525252 !important;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+}
+
+.text-black {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.text-black-light {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.text-black-secondary {
+  font-size: 2.25rem;
+}
+
+.text-light-secondary {
+  font-size: 1.125rem;
+}
+
+.text-description {
+  font-size: 1.25rem;
+}
+
+.text-lead {
+  font-size: 1.5rem;
+}
+
+.card {
+  background: #F9F9F9 !important;
+  border: 0.125rem solid #525252 !important;
+  border-radius: 0.6rem !important;
+}
+
+.closeIcon {
+  font-size: 2.5em;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+.closeIcon:hover {
+  color: #FF6969;
+  cursor: pointer;
+}
