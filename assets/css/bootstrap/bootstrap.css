@@ -3887,7 +3887,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: black;
+  color: #000;
 }
 
 .nav-tabs {
@@ -3909,7 +3909,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: black;
+  color: #000;
   background-color: transparent;
   border-color: transparent;
 }
@@ -3933,7 +3933,7 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: black;
+  color: #000;
   background-color: #007bff;
 }
 
