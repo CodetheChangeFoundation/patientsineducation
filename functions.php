@@ -16,6 +16,8 @@ require get_template_directory() . '/custom-fields/organizations-section.php';
 require get_template_directory() . '/custom-fields/project-description.php';
 require get_template_directory() . '/custom-fields/more-about-pie.php';
 require get_template_directory() . '/custom-fields/enable-contact-forms.php';
+require get_template_directory() . '/custom-fields/carousel.php';
+require get_template_directory() . '/custom-fields/directors.php';
 
 function pie_custom_post_type (){
  	$labels = array(

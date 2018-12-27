@@ -1,5 +1,4 @@
 /*
-
 Theme Name: Patients in Education
 Theme URI: www.patientsineducation.org
 Author: Code the Change Foundation
@@ -7,7 +6,6 @@ Author URI: http://codethechange.ca
 Description: Custom built theme for Patients in Education
 Version: 1.0.0
 Text Domain: patientsineducation
-
 */
 
 /* UNDER-NAVBAR */
@@ -20,7 +18,6 @@ Text Domain: patientsineducation
   line-height: 1.875rem;
   padding: 1rem 15% 4rem;
 }
-
 
 /* FOOTER */
 .pie-footer {
