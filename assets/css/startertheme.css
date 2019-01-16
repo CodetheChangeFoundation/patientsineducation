@@ -87,9 +87,9 @@ li a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 150px;
+  width: 150px;
   margin: 0 auto 20px;
-  width: 200px;
 }
 
 .help-section-wave {

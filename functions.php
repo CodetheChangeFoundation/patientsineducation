@@ -8,14 +8,7 @@
 require get_template_directory() . '/inc/cleanup.php';
 require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/theme-support.php';
-require get_template_directory() . '/custom-fields/paragraph.php';
 require get_template_directory() . '/inc/bs4navwalker.php';
-require get_template_directory() . '/custom-fields/help-section.php';
-require get_template_directory() . '/custom-fields/four-icon-section.php';
-require get_template_directory() . '/custom-fields/organizations-section.php';
-require get_template_directory() . '/custom-fields/project-description.php';
-require get_template_directory() . '/custom-fields/more-about-pie.php';
-require get_template_directory() . '/custom-fields/enable-contact-forms.php';
 
 function pie_custom_post_type (){
  	$labels = array(
