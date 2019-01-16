@@ -4,7 +4,7 @@
  *
  * @package startertheme
  */
- ?>
+?>
 
 <?php get_header(); ?>
 
@@ -30,7 +30,9 @@
 ?>
 
 <?php get_template_part( 'template-parts/contact-forms' )?>
+<?php get_template_part( 'template-parts/carousel' )?>
 <?php get_template_part( 'template-parts/paragraph' )?>
+<?php get_template_part( 'template-parts/directors' )?>
 <?php get_template_part( 'template-parts/help-section' )?>
 <?php get_template_part( 'template-parts/organizations-section' )?>
 
