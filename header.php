@@ -29,24 +29,24 @@
     <?php wp_head() ?>
   </head>
 
-<body <?php body_class() ?>>
-  <nav class="navbar navbar-expand-md navbar-light bg-danger">
-   <a class="navbar-brand" href="#">Patients in Education</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <?php
-   wp_nav_menu([
-     'menu'            => 'primary',
-     'theme_location'  => 'primary',
-     'container'       => 'div',
-     'container_id'    => 'bs4navbar',
-     'container_class' => 'collapse navbar-collapse',
-     'menu_id'         => false,
-     'menu_class'      => 'navbar-nav ml-auto',
-     'depth'           => 2,
-     'fallback_cb'     => 'bs4navwalker::fallback',
-     'walker'          => new bs4navwalker()
-   ]);
-   ?>
-</nav>
+<body class="container-fluid p-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-danger py-3 px-4 fixed-top">
+    <a class="navbar-brand font-weight-bold px-3" href="#">Patients in Education</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <?php
+      wp_nav_menu([
+        'menu'            => 'primary',
+        'theme_location'  => 'primary',
+        'container'       => 'div',
+        'container_id'    => 'bs4navbar',
+        'container_class' => 'collapse navbar-collapse',
+        'menu_id'         => false,
+        'menu_class'      => 'navbar-nav ml-auto px-3',
+        'depth'           => 2,
+        'fallback_cb'     => 'bs4navwalker::fallback',
+        'walker'          => new bs4navwalker()
+      ]);
+    ?>
+  </nav>
