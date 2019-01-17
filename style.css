@@ -1,71 +1,38 @@
 /*
-
 Theme Name: Patients in Education
 Theme URI: www.patientsineducation.org
 Author: Code the Change Foundation
 Author URI: http://codethechange.ca
 Description: Custom built theme for Patients in Education
 Version: 1.0.0
-Text Domain: startertheme
-
+Text Domain: patientsineducation
 */
 
-/* BODY */
-html, body {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+/* UNDER-NAVBAR */
+.pie-under-navbar {
+  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
+  background-size: 100% 100%;
 }
 
+.pie-under-navbar p {
+  line-height: 1.875rem;
+  padding: 1rem 15% 4rem;
+}
 
 /* FOOTER */
 .pie-footer {
   background: #2E2A2B;
   color: #F9F9F9;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: Oxygen, "Trebuchet MS", helvetica, sans-serif;
-  padding: 50px 72px 30px;
+  line-height: 1.875rem;
+  padding: 3rem 1.5rem 1.25rem;
 }
 
-.pie-footer h5 {
-  font-size: 18px;
-  line-height: 27px;
-  font-family: Quicksand, "Trebuchet MS", helvetica, sans-serif;
-  font-weight: bold;
-  margin: 0px 0px;
+.pie-prefooter {
+  background: #525252;
+  color: #F9F9F9;
 }
 
 .pie-footer ul, li {
-	list-style: none;
-	padding-left: 0px;
+  list-style: none;
+  padding-left: 0;
 }
-
-.pie-footer-copyright {
-/*text-align: center;
-  float: left;
-  width: 100%;
-  padding-top: 48px;
-	*/
-}
-/*
-.pie-footer:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
-.pie-footer-button {
-	background-color: #FF6969;
-    border: none;
-    color: #2E2A2B;
-    padding: 7px 24px;
-    text-align: center;
-    font-size: 16px;
-	line-height: 24px;
-    font-family: Quicksand, "Trebuchet MS", helvetica, sans-serif;
-    cursor: pointer;
-	border-radius: 3px;
-	font-weight: bold;
-}
-
