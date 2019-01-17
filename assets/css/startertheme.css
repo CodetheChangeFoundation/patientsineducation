@@ -10,6 +10,13 @@ body {
 	padding: 20px;
 }
 
+.grid {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px; 
+}
+
 .nav-link {
 	color: black;
 }
@@ -57,26 +64,35 @@ li > a.active::after {
     background-color: #000;
 }
 
-/*#menu-main-navigation {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FF6969;
-    display: flex;
-	justify-content: flex-end;
+.rc1, .rc2, .rc3 {
+  border-radius: 25px;
+  padding-top: 0px;
+  width: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 
-
-li {
-    float: left;
+.t1 {
+  padding-bottom: 30px;
+  color: #525252
 }
 
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+.im1, .im2, .im3 {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  top: -4rem;
+  z-index: 2;
+
+}
+
+/*.icon1, .icon2, .icon3 {
+  position: absolute;
+  top: 4rem;
+  z-index: 2;
 }*/
