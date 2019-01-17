@@ -5,12 +5,10 @@
  * @package patientsineducation
  */
 
-  if(get_field('enable_help_section_cf')): ?>
+  if( get_field('enable_help_section_cf') && get_field('help_section_title') ): ?>
     <div class="light-grey pt-4">
       <div class="container text-center">
-        <?php if(get_field('help_section_title')): ?>
-            <h1 class="text-left pb-4"><?php the_field('help_section_title') ?></h1>
-        <?php endif ?>
+        <h1 class="font-weight-bold text-left pb-4"><?php the_field('help_section_title') ?></h1>
 
         <section>
           <div class="row">
@@ -23,7 +21,7 @@
                 <?php endif ?>
 
                 <?php if(get_field('hs_' . $position .'_column_title')): ?>
-                    <h2><?php the_field('hs_' . $position .'_column_title') ?></h2>
+                    <h3 class="font-weight-bold"><?php the_field('hs_' . $position .'_column_title') ?></h3>
                 <?php endif ?>
 
                 <?php if(get_field('hs_' . $position .'_column_text')): ?>

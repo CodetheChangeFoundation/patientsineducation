@@ -6,7 +6,7 @@
  */
 
   if(get_field('enable_patients_form_cf') || get_field('enable_volunteers_form_cf') || get_field('enable_general_form_cf')): ?>
-    <div>
+    <div class="mt-5">
       <ul class="nav nav-tabs px-5" role="tablist">
         <?php if(get_field('enable_patients_form_cf')): ?>
           <li class="nav-item">
@@ -29,13 +29,13 @@
       </ul>
       <div class="tab-content row">
         <div class="tab-pane fade <?php if(get_field('enable_patients_form_cf')): ?>show active <?php endif; ?>col-11 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">
-          <?php echo do_shortcode('[contact-form-7 id="28" title="Request for Patients"]');?>
+          <?php echo do_shortcode('[contact-form-7 id="140" title="Request for Patients"]');?>
         </div>
         <div class="tab-pane fade <?php if(get_field('enable_volunteers_form_cf') and !get_field('enable_patients_form_cf')): ?>show active <?php endif; ?>col-11 mx-auto" id="volunteers-form" role="tabpanel" aria-labelledby="volunteers-tab">
-          <?php echo do_shortcode('[contact-form-7 id="56" title="Request for Volunteers"]');?>
+          <?php echo do_shortcode('[contact-form-7 id="141" title="Request for Volunteers"]');?>
         </div>
         <div class="tab-pane fade <?php if(get_field('enable_general_form_cf') and !get_field('enable_patients_form_cf') and !get_field('enable_volunteers_form_cf')): ?>show active <?php endif; ?>col-11 mx-auto" id="general-form" role="tabpanel" aria-labelledby="general-tab">
-          <?php echo do_shortcode('[contact-form-7 id="57" title="General Inquiry"]');?>
+          <?php echo do_shortcode('[contact-form-7 id="142" title="General Inquiry"]');?>
         </div>
       </div>
     </div>
