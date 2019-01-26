@@ -16,10 +16,6 @@
     <meta name="description" content="<?php bloginfo('description') ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- flexbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
@@ -29,24 +25,25 @@
     <?php wp_head() ?>
   </head>
 
-<body class="container-fluid p-0">
-  <nav class="navbar navbar-expand-md navbar-light bg-danger py-3 px-4 fixed-top">
-    <a class="navbar-brand font-weight-bold px-3" href="#">Patients in Education</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <?php
-      wp_nav_menu([
-        'menu'            => 'primary',
-        'theme_location'  => 'primary',
-        'container'       => 'div',
-        'container_id'    => 'bs4navbar',
-        'container_class' => 'collapse navbar-collapse',
-        'menu_id'         => false,
-        'menu_class'      => 'navbar-nav ml-auto px-3',
-        'depth'           => 2,
-        'fallback_cb'     => 'bs4navwalker::fallback',
-        'walker'          => new bs4navwalker()
-      ]);
-    ?>
-  </nav>
+<body class="p-0">
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-md navbar-light bg-danger py-3 fixed-top">
+      <a class="navbar-brand font-weight-bold px-3" href="#">Patients in Education</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <?php
+        wp_nav_menu([
+          'menu'            => 'primary',
+          'theme_location'  => 'primary',
+          'container'       => 'div',
+          'container_id'    => 'bs4navbar',
+          'container_class' => 'collapse navbar-collapse',
+          'menu_id'         => false,
+          'menu_class'      => 'navbar-nav ml-auto px-3',
+          'depth'           => 2,
+          'fallback_cb'     => 'bs4navwalker::fallback',
+          'walker'          => new bs4navwalker()
+        ]);
+      ?>
+    </nav>
