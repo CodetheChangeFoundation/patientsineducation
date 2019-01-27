@@ -1,8 +1,8 @@
 <?php
 /**
- * Code the Change Foundation Starter Theme Cleanup
+ * Theme cleanup
  *
- * @package patients
+ * @package patientsineducation
  */
 
 // Remove version string from js and css

@@ -1,8 +1,8 @@
 <?php
  /**
- * Code the Change template for the footer
+ * Footer template
  *
- * @package patients
+ * @package patientsineducation
  */
 ?>
       <footer>
@@ -39,7 +39,8 @@
                     <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="twitter-icon.png"]');?>" alt="Twitter" />
                   </a>
                   <br>
-                  Email : patients.in.education@gmail.com<br>
+                  Email : patients.in.education@gmail.com
+                  <br>
                   <a href="/contact-us/" class="btn btn-primary mt-2">Contact Us</a>
                 </p>
               </div>
@@ -47,7 +48,7 @@
           </div>
           <div class="row">
             <div class="col-12 text-center mb-0">
-              © <?php echo date("Y"); ?> Patients In Education. Developed by <a href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.
+              <p>&copy; <?php echo date("Y"); ?> Patients In Education. Developed by <a href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.</p>
             </div>
           </div>
         </div>
