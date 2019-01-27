@@ -1,12 +1,12 @@
 [
     {
-        "key": "group_5c4cc1ea1b6e5",
-        "title": "Board of Directors",
+        "key": "group_5c4d646c7dc9c",
+        "title": "Outreach Section",
         "fields": [
             {
-                "key": "field_5c4cc1efb23c6",
-                "label": "Enable Directors Grid",
-                "name": "enable_directors_grid",
+                "key": "field_5c4d680c2356b",
+                "label": "Enable Outreach Section",
+                "name": "enable_outreach_section",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,
@@ -23,16 +23,16 @@
                 "ui_off_text": ""
             },
             {
-                "key": "field_5c4cc522b23c7",
-                "label": "Board of Directors Title",
-                "name": "board_of_directors_title",
+                "key": "field_5c4d6c1ba349a",
+                "label": "Outreach Title",
+                "name": "outreach_title",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5c4cc1efb23c6",
+                            "field": "field_5c4d680c2356b",
                             "operator": "==",
                             "value": "1"
                         }
@@ -50,16 +50,16 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5c4cc532b23c8",
-                "label": "Director",
-                "name": "director",
+                "key": "field_5c4d683078256",
+                "label": "Outreach",
+                "name": "outreach",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5c4cc1efb23c6",
+                            "field": "field_5c4d680c2356b",
                             "operator": "==",
                             "value": "1"
                         }
@@ -72,13 +72,13 @@
                 },
                 "collapsed": "",
                 "min": 0,
-                "max": 0,
+                "max": 3,
                 "layout": "table",
-                "button_label": "Add Director",
+                "button_label": "Add Outreach Section",
                 "sub_fields": [
                     {
-                        "key": "field_5c4cc596b23c9",
-                        "label": "Director's Image",
+                        "key": "field_5c4d684478257",
+                        "label": "Image",
                         "name": "image",
                         "type": "image",
                         "instructions": "",
@@ -101,12 +101,12 @@
                         "mime_types": ""
                     },
                     {
-                        "key": "field_5c4cc62db23ca",
-                        "label": "Director's Name",
-                        "name": "name",
+                        "key": "field_5c4d685c78258",
+                        "label": "Title",
+                        "name": "title",
                         "type": "text",
                         "instructions": "",
-                        "required": 1,
+                        "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -120,25 +120,10 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c4cc65ab23cb",
-                        "label": "Director's Link",
-                        "name": "link",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "url"
-                    },
-                    {
-                        "key": "field_5c4cc67bb23cc",
-                        "label": "Director's Description",
-                        "name": "description",
-                        "type": "textarea",
+                        "key": "field_5c4d688f78259",
+                        "label": "Content",
+                        "name": "content",
+                        "type": "wysiwyg",
                         "instructions": "",
                         "required": 1,
                         "conditional_logic": 0,
@@ -148,10 +133,10 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "placeholder": "",
-                        "maxlength": "",
-                        "rows": "",
-                        "new_lines": ""
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 0,
+                        "delay": 0
                     }
                 ]
             }
@@ -161,7 +146,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "20"
+                    "value": "5"
                 }
             ]
         ],

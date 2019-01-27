@@ -66,7 +66,7 @@ li > a.active::after {
 
 /* Outreach Section */
 
-.rc1, .rc2, .rc3 {
+.outreach {
   border-radius: 25px;
   padding-top: 0px;
   width: 200px;
@@ -78,13 +78,7 @@ li > a.active::after {
   z-index: 1;
 }
 
-
-.t1 {
-  padding-bottom: 30px;
-  color: #525252
-}
-
-.im1, .im2, .im3 {
+.outreach-img {
   height: 10rem;
   width: 10rem;
   position: relative;

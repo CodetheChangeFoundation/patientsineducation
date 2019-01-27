@@ -47,7 +47,7 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "",
+                "button_label": "Add Carousel Image",
                 "sub_fields": [
                     {
                         "key": "field_5c4d4c2962b9f",
@@ -62,7 +62,7 @@
                             "class": "",
                             "id": ""
                         },
-                        "return_format": "url",
+                        "return_format": "array",
                         "preview_size": "thumbnail",
                         "library": "all",
                         "min_width": "",

@@ -31,6 +31,7 @@ if (have_posts()):
 <?php get_template_part('template-parts/paragraph')?>
 <?php get_template_part('template-parts/directors')?>
 <?php get_template_part('template-parts/help-section')?>
+<?php get_template_part('template-parts/outreach'); ?>
 <?php get_template_part('template-parts/organizations-section')?>
 
 <?php
