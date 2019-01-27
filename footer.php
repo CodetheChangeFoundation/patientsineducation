@@ -41,14 +41,16 @@
                   <br>
                   Email : patients.in.education@gmail.com
                   <br>
-                  <a href="/contact-us/" class="btn btn-primary mt-2">Contact Us</a>
+                  <button class="btn btn-primary mt-2">
+                    <a href="/contact-us/">Contact Us</a>
+                  </button>
                 </p>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 text-center mb-0">
-              <p>&copy; <?php echo date("Y"); ?> Patients In Education. Developed by <a href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.</p>
+              <p>&copy; <?php echo date("Y"); ?> Patients In Education. Developed by <a id="ctc" href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.</p>
             </div>
           </div>
         </div>

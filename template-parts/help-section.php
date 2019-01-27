@@ -6,7 +6,7 @@
  */
 if (get_field('enable_help_section') && get_field('help_section_title')):
 ?>
-  <div class="light-grey pt-4">
+  <div class="bg-grey pt-4">
     <div class="container text-center">
       <h1 class="font-weight-bold text-left pb-4"><?php the_field('help_section_title') ?></h1>
       <section>

@@ -5,7 +5,7 @@
  * @package patientsineducation
  */
 ?>
-<div class="container">
+<div class="bg-grey container-fluid">
   <div class="row directors-grid">
     <?php
     if (get_field('enable_directors_grid')):

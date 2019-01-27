@@ -2,22 +2,34 @@ html,
 body {
 	margin: 0;
 	color: #333;
-	background: #eee;
+	background: #FFF;
 	font: sans-serif;
+}
+
+.bg-grey {
+  background: #F9F9F9;
 }
 
 .nav-link {
 	color: black;
 }
 
-li > a {
-  position: relative;
-  color: #000;
+a {
   text-decoration: none;
+  color: #000;
 }
 
-li > a:hover {
-  color: #000;
+a:hover {
+  text-decoration: underline;
+  color: #000
+}
+
+#ctc {
+  color: #FFF;
+}
+
+li > a {
+  position: relative;
 }
 
 li > a::before {
@@ -70,8 +82,8 @@ li > a.active::after {
 
 /* HELP AND FOUR ICON SECTION */
 
-.light-grey {
-  background-color: #F9F9F9;
+.bg-white {
+  background-color: #FFF;
 }
 
 .section-wave {
@@ -237,7 +249,6 @@ li > a.active::after {
   color: #FF6969;
   cursor: pointer;
 }
-
 
 /* About Us */
 .text-large, .title-1, .title-2, .title-3, .title-4 {

@@ -46,8 +46,13 @@
 							<p class="closeIcon pb-2 pt-2 pr-3 pl-3" role="button"> &times; </p>
 							<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
 							<h5 class="mb-0 text-light-secondary"><?php the_excerpt(); ?></h5>
-							<span class="text-lead mb-3"><?php the_field('leading_sentence'); ?><span class="text-description"><?php the_field('paragraph'); ?></span></span>
-							<p class="m-0"><a class="btn btn-primary text-weight-bold" href="#" target="_blank">Learn More</a></p>
+							<p class="text-lead mb-3"><?php the_field('leading_sentence'); ?></p>
+							<p class="text-description"><?php the_field('paragraph'); ?></p>
+							<span class="m-0">
+								<button class="btn btn-primary">
+									<a href="<?php echo get_field('link')['url'] ?>" target="_blank">Learn More</a>
+								</button>
+							</span>
 						</div>
 					</div>
 				<?php endif; ?>

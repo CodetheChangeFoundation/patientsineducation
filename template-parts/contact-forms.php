@@ -24,7 +24,9 @@ if (get_field('enable_patients_form') || get_field('enable_volunteers_form') || 
         </li>
       <?php endif; ?>
       <li class="nav-item px-4">
-        <a href="mailto:patients.in.education@gmail.com" class="btn btn-primary mt-1">Email Us Directly</a>
+        <button class="btn btn-primary mt-1">
+          <a href="mailto:patients.in.education@gmail.com">Email Us Directly</a>
+        </button>
       </li>
     </ul>
     <div class="tab-content row">
@@ -41,6 +43,8 @@ if (get_field('enable_patients_form') || get_field('enable_volunteers_form') || 
   </div>
 <?php elseif (get_the_title($ID)=='Contact Us'): ?>
   <div class="text-center">
-    <a href="mailto:patients.in.education@gmail.com" class="btn btn-primary mb-2">Email Us</a>
+    <button class="btn btn-primary mb-2">
+      <a href="mailto:patients.in.education@gmail.com">Email Us</a>
+    </button>
   </div>
 <?php endif; ?>
