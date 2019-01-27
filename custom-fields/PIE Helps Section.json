@@ -6,7 +6,7 @@
             {
                 "key": "field_5c22b1359c9a6",
                 "label": "Enable Help Section Content",
-                "name": "enable_help_section_cf",
+                "name": "enable_help_section",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,
