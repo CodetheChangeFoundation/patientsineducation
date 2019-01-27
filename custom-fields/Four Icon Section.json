@@ -6,7 +6,7 @@
             {
                 "key": "field_5c229f52ae8c5",
                 "label": "Enable Four Icon Section",
-                "name": "enable_four_icon_section_cf",
+                "name": "enable_four_icon_section",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,

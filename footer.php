@@ -2,7 +2,7 @@
  /**
  * Code the Change template for the footer
  *
- * @package startertheme
+ * @package patients
  */
 ?>
       <footer>

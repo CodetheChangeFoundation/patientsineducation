@@ -2,7 +2,7 @@
 /**
  * Code the Change template for the index
  *
- * @package startertheme
+ * @package patients
  */
 ?>
 
