@@ -273,106 +273,64 @@ li > a.active::after {
 }
 
 /* About Us */
-.text-large, .title-1, .title-2, .title-3, .title-4 {
-  font-style: normal;
-  color: #525252 !important;
-}
-
-.text-large {
-  font-size: 3rem;
-  line-height: 4.5rem;
-  margin-bottom: 4.44rem;
-}
 
 .row-odd {
-  left: -117px;
+  margin-left: -250px;
 }
 
 .row-even {
-  right: -117px;
+  margin-right: -250px;
 }
 
-.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+.row-odd, .row-even {
+  width: 100%;
+}
+
+#more-about-pie-flex {
+  overflow: hidden;
+}
+
+.thumbnail, .col-even, .col-odd {
   border-radius: 3rem;
   position: relative;
   height: 16.3rem;
-  opacity: 0.75;
+  width: 16.3rem;
+  overflow: hidden;
+}
+
+.thumbnail {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  width: 100%;
-  overflow: visible;
 }
 
-.content-container-1, .content-container-2, .content-container-3,.content-container-4 {
-  position: relative;
-  /* width: 42.8% !important; */
-  height: 16.3rem;
+.col-even, .col-odd {
   border: 0.125rem solid #525252;
-  box-sizing: border-box;
-  border-radius: 3rem;
+  overflow: scroll;
 }
 
-.content-container-1, .content-container-3 {
-  left: 3.5rem;
+.col-even {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  text-align: right;
 }
 
-.content-container-2, .content-container-4 {
-  right: 3.5rem;
-}
+@media (max-width: 768px) {
+  .row-odd {
+    margin-left: 0;
+  }
 
-.title-1, .title-2, .title-3, .title-4 {
-  position: absolute;
-  top: 2.25rem;
-}
+  .row-even {
+    margin-right: 0;
+  }
 
-.title-1, .title-3, .content-text-1, .content-text-3 {
-  left: 12.6%;
-}
-
-.title-2, .title-4, .content-text-2, .content-text-4 {
-  right: 12.6%;
-}
-
-.content-text-1, .content-text-2, .content-text-3, .content-text-4 {
-  position: absolute;
-  top: 34.48%;
-  width: 78.74% !important;
-  color: #525252 !important;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 2rem;
-}
-
-.dot-1, .dot-3 {
-  position: relative;
-  left: -2.5rem;
-  top: -1rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot-2, .dot-4 {
-  position: relative;
-  right: 2.5rem;
-  top: -1rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  display: inline-block;
-  background: linear-gradient(135deg, #69FFAE 0%, #E1FF69 100%);
-}
-
-.dot-1 {
-  background: linear-gradient(135deg, #6993FF 0%, #4BE4FA 100%);
-}
-
-.dot-3 {
-  background: linear-gradient(135deg, #B469FF 0%, #E169FF 100%);
+  .col-even, .col-odd, .about-pie-img {
+    width: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 /* Director's Grid */
