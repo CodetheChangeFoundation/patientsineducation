@@ -1,8 +1,8 @@
 <?php
 /**
- * Code the Change Starter theme support options
+ * Theme support options
  *
- * @package startertheme
+ * @package patientsineducation
  */
 
 // Activate User Selected Post Formats
@@ -23,11 +23,11 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );
 
 // Activate Nav Menu Option
-function startertheme_register_nav_menu() {
+function patients_register_nav_menu() {
   register_nav_menu( 'primary', 'Header Navigation Menu' );
   register_nav_menu( 'footer', 'Footer Menu' );
 }
-add_action( 'after_setup_theme', 'startertheme_register_nav_menu' );
+add_action( 'after_setup_theme', 'patients_register_nav_menu' );
 
 // Activate HTML5 Features
 add_theme_support( 'html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption') );

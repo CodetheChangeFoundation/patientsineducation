@@ -1,7 +1,7 @@
 [
     {
         "key": "group_5c3f8bc4f03f5",
-        "title": "Project Description",
+        "title": "Engagement CPT Description",
         "fields": [
             {
                 "key": "field_5c3f8bc9c6018",
@@ -40,6 +40,21 @@
                 "maxlength": "",
                 "rows": "",
                 "new_lines": ""
+            },
+            {
+                "key": "field_5c4d640277b33",
+                "label": "Link",
+                "name": "link",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
             }
         ],
         "location": [
@@ -47,7 +62,7 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "engagement"
+                    "value": "engagements"
                 }
             ]
         ],

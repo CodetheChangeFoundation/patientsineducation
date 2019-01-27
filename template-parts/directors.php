@@ -1,54 +1,46 @@
 <?php
 /**
- * Directors template
+ * Director's grid template
  *
  * @package patientsineducation
  */
-
-if(get_field('enable_directors_section')): ?>
-
-  <div class ="container">
-    <?php if(get_field('board_of_directors_title')): ?>
-      <h1 class="text-left pb-4"><?php the_field('board_of_directors_title') ?></h1>
-    <?php endif ?>
-
+?>
+<div class="bg-grey container-fluid">
+  <div class="row directors-grid">
     <?php
-    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-    for ($i = 1; $i < 16; $i=$i+3){?>
-
-      <div class="row">
-        <?php
-        $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-        for ($j = 0; $j < 3; $j++){
-          $image = get_field('director_'.($i+$j)); ?>
-
-          <?php if( !empty($image)): ?>
-            <div class="col-xs">
-              <div class="hovereffect">
-                <img class="large-img" src="<?php echo $image['sizes'][ $size ]; ?>" alt="<?php echo $image['alt']; ?>"?>
-
-                <?php if( $image['title'] ): ?>
-                  <p class="title"><?php echo $image['title'] ?></p>
-                <?php endif; ?>
-
-                <div class="overlay">
-                  <div class="content">
-                    <img class="small-img" src="<?php echo $image['sizes'][ $size ]; ?>">
-                    <button type="submit" href="#">Learn More</button>
-                    <?php if( $image['caption'] ): ?>
-                      <p><?php echo $image['caption'] ?></p>
-                    <?php endif; ?>
+    if (get_field('enable_directors_grid')):
+      while (have_rows('director')): the_row();
+    ?>
+        <div class="col-12 col-sm-6 col-lg-4 text-center pt-5">
+          <?php
+          $image = get_sub_field('image');
+          $name = get_sub_field('name');
+          $desc = get_sub_field('description');
+          if (!empty($image) && !empty($name) && !empty($desc)):
+          ?>
+            <figure class="m-auto">
+              <div>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-100 d-block"/>
+                <?php if (!empty(get_sub_field('link'))): ?>
+                  <div class="button-container p-1">
+                    <button class="btn btn-primary">
+                      <a class="link" href="<?php echo the_sub_field('link') ?>" target="_blank">
+                        Learn More
+                      </a>
+                    </button>
                   </div>
-                  <?php if( $image['title'] ): ?>
-                    <p class="title"><?php echo $image['title'] ?></p>
-                  <?php endif; ?>
-                </div>
-
+                <?php endif; ?>
               </div>
+              <figcaption class="p-2">
+                <p class="w-100"><?php echo $desc?></p>
+              </figcaption>
+            </figure>
+            <div class="employee-name pt-2">
+              <h3 class="m-0"><?php echo $name ?></h3>
             </div>
           <?php endif; ?>
-        <?php } ?>
-      </div>
-    <?php } ?>
+        </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
-<?php endif;?>
+</div>
