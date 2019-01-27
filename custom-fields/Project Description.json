@@ -1,0 +1,63 @@
+[
+    {
+        "key": "group_5c3f8bc4f03f5",
+        "title": "Project Description",
+        "fields": [
+            {
+                "key": "field_5c3f8bc9c6018",
+                "label": "Leading Sentence",
+                "name": "leading_sentence",
+                "type": "text",
+                "instructions": "Leading sentence of project description",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c3f8bf0c6019",
+                "label": "Paragraph",
+                "name": "paragraph",
+                "type": "textarea",
+                "instructions": "Project description",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "engagement"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

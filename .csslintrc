@@ -1,6 +1,7 @@
 {
   "ignore": [
-    "adjoining-classes"
+    "adjoining-classes",
+    "order-alphabetical"
   ],
   "warnings": [
     "ids",
