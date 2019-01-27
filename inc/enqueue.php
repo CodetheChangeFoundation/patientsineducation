@@ -1,8 +1,8 @@
 <?php
 /**
- * Code the Change Foundation enqueue functions
+ * Patients in Education enqueue functions
  *
- * @package startertheme
+ * @package patients
  */
 
 function startertheme_load_scritps() {
