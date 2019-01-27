@@ -1,8 +1,8 @@
 <?php
 /**
- * Patients in Education Starter theme support options
+ * Theme support options
  *
- * @package patients
+ * @package patientsineducation
  */
 
 // Activate User Selected Post Formats

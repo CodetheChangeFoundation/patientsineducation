@@ -1,8 +1,8 @@
 <?php
 /**
- * Patients in Education template for the index
+ * Index template
  *
- * @package patients
+ * @package patientsineducation
  */
 ?>
 
@@ -26,7 +26,7 @@ if (have_posts()):
       <p><?php echo the_content(); ?></p>
     <?php endif; ?>
   <?php endwhile; ?>
-<?php endif;?>
+<?php endif; ?>
 
 <?php get_template_part('template-parts/contact-forms')?>
 <?php get_template_part('template-parts/carousel')?>
@@ -45,15 +45,13 @@ if (have_posts()):
 
 <div>
   <?php
-    if(get_field('enable_content')):
-      if(get_field('additional_content')):
-        the_field('additional_content');
-      endif;
+    if (get_field('enable_content') && get_field('additional_content')):
+      the_field('additional_content');
     endif;
   ?>
 </div>
 
-<?php get_template_part('template-parts/four-icon-section')?>
+<?php get_template_part('template-parts/four-icon-section'); ?>
 <div class="container mx-0 px-0 mt-4 mw-100">
   <?php get_template_part('template-parts/more-about-pie'); ?>
 </div>

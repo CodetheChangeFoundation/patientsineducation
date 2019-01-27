@@ -1,3 +1,11 @@
+<?php
+/**
+ * Engagement custom post type loop template
+ *
+ * @package patientsineducation
+ */
+?>
+
 <div class="container accordion" id="engagements">
 	<div class="row">
 		<?php 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Patients in Education Foundation Starter Theme Cleanup
+ * Theme cleanup
  *
- * @package patients
+ * @package patientsineducation
  */
 
 // Remove version string from js and css

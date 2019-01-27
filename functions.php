@@ -1,6 +1,6 @@
 <?php
 /**
- * Patients in Education Functions
+ * Functions
  *
  * @package patientsineducation
  */
@@ -10,7 +10,4 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/bs4navwalker.php';
 require get_template_directory() . '/inc/engagements-cpt.php';
-
-add_shortcode( 'get_icon_url', function( $atts ){
-    return get_template_directory_uri() . '/assets/icons/' . $atts['image'];
-});
+require get_template_directory() . '/inc/shortcodes.php';

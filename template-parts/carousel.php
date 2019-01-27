@@ -2,7 +2,7 @@
 /**
  * Carousel template
  *
- * @package patients
+ * @package patientsineducation
  */
 ?>
 

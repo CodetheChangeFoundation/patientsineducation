@@ -1,8 +1,8 @@
 <?php
 /**
- * Patients in Education custom post types
+ * Custom post types
  *
- * @package patients
+ * @package patientsineducation
  */
 
 function pie_custom_post_type (){
