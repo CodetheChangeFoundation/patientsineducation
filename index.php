@@ -37,17 +37,16 @@ if (have_posts()):
   global $post;
   $post_slug = $post->post_name;
   if ($post_slug == 'engagements'):
-    get_template_part('content', 'archive');
+    get_template_part('content', 'post');
   endif;
 ?>
 
-<div>
-  <?php
-    if (get_field('enable_content') && get_field('additional_content')):
-      the_field('additional_content');
-    endif;
-  ?>
-</div>
+
+<?php if (get_field('enable_content') && get_field('additional_content')): ?>
+  <div>
+    <?php the_field('additional_content'); ?>
+  </div>
+<?php endif; ?>
 
 <?php get_template_part('template-parts/four-icon-section'); ?>
 <div class="container mx-0 px-0 mt-4 mw-100">
