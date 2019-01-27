@@ -2,7 +2,7 @@
 /**
  * Code the Change template for the header
  *
- * @package startertheme
+ * @package patients
  */
  ?>
 

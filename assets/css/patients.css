@@ -116,7 +116,6 @@ li > a:hover {
   color: #000;
 }
 
-
 li > a::before {
   content: "";
   position: absolute;
@@ -477,4 +476,52 @@ li a {
 
 .dot-3 {
   background: linear-gradient(135deg, #B469FF 0%, #E169FF 100%);
+}
+
+/**
+ *
+ * Director's Grid
+ *
+*/
+
+.directors-grid figure {
+  position: relative;
+  overflow: hidden;
+  max-width: 40rem;
+}
+
+.directors-grid figure img {
+  transition: all 350ms cubic-bezier(0, 0.6, 0.6, 1);
+  position: relative;
+  z-index: 10;
+}
+
+.directors-grid figure .button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.directors-grid figure figcaption {
+  transition: all 350ms cubic-bezier(0, 0.6, 0.6, 1);
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.directors-grid figure:hover img {
+  transform: translateY(-37.5%) translateX(-37.5%) scale(0.25);
+}
+
+.link, .link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #000;
 }

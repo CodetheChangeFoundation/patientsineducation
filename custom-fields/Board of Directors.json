@@ -1,12 +1,12 @@
 [
     {
-        "key": "group_5c3f7ba86ee24",
-        "title": "Organizations",
+        "key": "group_5c4cc1ea1b6e5",
+        "title": "Board of Directors",
         "fields": [
             {
-                "key": "field_5c3f7bd1af7be",
-                "label": "Enable Organizations Section Content",
-                "name": "enable_organizations",
+                "key": "field_5c4cc1efb23c6",
+                "label": "Enable Directors Grid",
+                "name": "enable_directors_grid",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,
@@ -23,16 +23,16 @@
                 "ui_off_text": ""
             },
             {
-                "key": "field_5c3f7c42af7bf",
-                "label": "Organizations Title",
-                "name": "organizations_title",
+                "key": "field_5c4cc522b23c7",
+                "label": "Board of Directors Title",
+                "name": "board_of_directors_title",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5c3f7bd1af7be",
+                            "field": "field_5c4cc1efb23c6",
                             "operator": "==",
                             "value": "1"
                         }
@@ -50,70 +50,16 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5c3f7c7aaf7c0",
-                "label": "Organization Subtitle Left",
-                "name": "organization_subtitle_left",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_5c3f7bd1af7be",
-                            "operator": "==",
-                            "value": "1"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5c3f7cbdaf7c1",
-                "label": "Organization Subtitle Right",
-                "name": "organization_subtitle_right",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_5c3f7bd1af7be",
-                            "operator": "==",
-                            "value": "1"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5c4d0da7196be",
-                "label": "Organization",
-                "name": "organization",
+                "key": "field_5c4cc532b23c8",
+                "label": "Director",
+                "name": "director",
                 "type": "repeater",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5c3f7bd1af7be",
+                            "field": "field_5c4cc1efb23c6",
                             "operator": "==",
                             "value": "1"
                         }
@@ -128,11 +74,35 @@
                 "min": 0,
                 "max": 0,
                 "layout": "table",
-                "button_label": "Add Organization",
+                "button_label": "",
                 "sub_fields": [
                     {
-                        "key": "field_5c4d0e1e196bf",
-                        "label": "Name",
+                        "key": "field_5c4cc596b23c9",
+                        "label": "Director's Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5c4cc62db23ca",
+                        "label": "Director's Name",
                         "name": "name",
                         "type": "text",
                         "instructions": "",
@@ -150,33 +120,9 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c4d0e41196c0",
-                        "label": "Image",
-                        "name": "image",
-                        "type": "image",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "url",
-                        "preview_size": "thumbnail",
-                        "library": "all",
-                        "min_width": "",
-                        "min_height": "",
-                        "min_size": "",
-                        "max_width": "",
-                        "max_height": "",
-                        "max_size": "",
-                        "mime_types": ""
-                    },
-                    {
-                        "key": "field_5c4d0e56196c1",
-                        "label": "Website Link",
-                        "name": "website_link",
+                        "key": "field_5c4cc65ab23cb",
+                        "label": "Director's Link",
+                        "name": "link",
                         "type": "link",
                         "instructions": "",
                         "required": 0,
@@ -187,6 +133,25 @@
                             "id": ""
                         },
                         "return_format": "url"
+                    },
+                    {
+                        "key": "field_5c4cc67bb23cc",
+                        "label": "Director's Description",
+                        "name": "description",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
                     }
                 ]
             }

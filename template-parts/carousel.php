@@ -1,10 +1,10 @@
 <?php
 /**
- * Code the Change template for the index
+ * Carousel template
  *
- * @package startertheme
+ * @package patients
  */
- ?>
+?>
 
 <?php
 $image1 = get_field('slider_1');
