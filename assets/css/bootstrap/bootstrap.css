@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- 
+
  /* Google font import */
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,400i,600,700');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,400i,600,700');
@@ -2361,7 +2361,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  background-color: #FF6969;	
+  background-color: #FF6969;
   color: #2E2A2B;
   border: none;
   font-weight: bold;
@@ -2370,7 +2370,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  background-color: #FF6969;	
+  background-color: #FF6969;
   color: #2E2A2B;
   border-color: #bd2130;
 }
@@ -2380,14 +2380,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #FF6969;	
+  background-color: #FF6969;
   color: #2E2A2B;
   border-color: #dc3545;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  background-color: #FF6969;	
+  background-color: #FF6969;
   color: #2E2A2B;
   border-color: #b21f2d;
 }
