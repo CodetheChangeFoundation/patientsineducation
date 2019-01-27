@@ -587,19 +587,11 @@ pre code {
   .container {
     max-width: 540px;
   }
-  .rc1, .rc2, .rc3 {
-    margin: auto;
-    margin-bottom: 6rem;
-  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-  }
-    .rc1, .rc2, .rc3 {
-    margin: auto;
-    margin-bottom: 6rem;
   }
 }
 
