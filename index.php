@@ -14,7 +14,6 @@ if (have_posts()):
     /* Display the page title and under-navbar styling only if it's not the home page */
     if (!is_front_page()): ?>
       <div class="container-fluid m-0">
-        <hr/>
         <div class="pie-under-navbar row px-5 py-5">
           <div class="col-12 text-center">
             <h2><?php echo the_title(); ?></h2>
