@@ -1,6 +1,6 @@
 <?php
 /**
- * Code the Change Foundation Starter Theme Cleanup
+ * Patients in Education Foundation Starter Theme Cleanup
  *
  * @package patients
  */

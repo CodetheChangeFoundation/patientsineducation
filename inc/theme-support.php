@@ -1,6 +1,6 @@
 <?php
 /**
- * Code the Change Starter theme support options
+ * Patients in Education Starter theme support options
  *
  * @package patients
  */

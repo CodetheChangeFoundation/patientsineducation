@@ -1,6 +1,6 @@
 <?php
  /**
- * Code the Change template for the footer
+ * Patients in Education template for the footer
  *
  * @package patients
  */

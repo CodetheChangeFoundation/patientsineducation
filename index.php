@@ -1,6 +1,6 @@
 <?php
 /**
- * Code the Change template for the index
+ * Patients in Education template for the index
  *
  * @package patients
  */
@@ -13,9 +13,9 @@ if (have_posts()):
   while (have_posts()): the_post();
     /* Display the page title and under-navbar styling only if it's not the home page */
     if (!is_front_page()): ?>
-      <div class="container-fluid m-0" style="margin-top: 2.5rem !important;">
+      <div class="container-fluid m-0">
         <hr/>
-        <div class="pie-under-navbar row px-5 py-4">
+        <div class="pie-under-navbar row px-5 py-5">
           <div class="col-12 text-center">
             <h2><?php echo the_title(); ?></h2>
             <h5><?php echo the_content(); ?></h5>
