@@ -1,105 +1,9 @@
-.carousel-indicators li {
-  border-radius: 50%;
-  margin: 1px 3px;
-  /* max-width: 30px; */
-  /* height: 30px; */
-  background-color: transparent;
-}
-
-.carousel-inner .item img {
-  width: 100%;
-  margin: auto;
-  height: 400px;
-  text-align: center;
-}
-
-.row .col-xs {
-  display: grid;
-  text-align: center;
-  justify-content: center;
-}
-
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  cursor: default;
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: white;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.hovereffect .large-img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: relative;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-  /* margin: 10%; */
-}
-
-.overlay .small-img {
-  display: inline-block;
-  width: 30%;
-  /* position:relative; */
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-}
-
-.hovereffect .title {
-  font-size: 16px;
-  text-align: center;
-}
-
-.overlay .content {
-  font-size: 14px;
-  width: 200px;
-  height: 200px;
-  border-bottom: 2px solid #555;
-  overflow: scroll;
-}
-
-.hovereffect button {
-  text-decoration: none;
-  display: inline-block;
-  background-color: #FF6969;
-  color: #2E2A2B;
-  height: 15%;
-  text-align: center;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-left: 10%;
-  padding-left: 5%;
-}
-
-.hovereffect:hover .overlay {
-  opacity: 1;
-}
-
 html,
 body {
 	margin: 0;
 	color: #333;
 	background: #eee;
 	font: sans-serif;
-}
-
-body {
-	padding: 20px;
 }
 
 .nav-link {
@@ -147,30 +51,6 @@ li > a.active::after {
   right: 0;
   background-color: #000;
 }
-
-/*#menu-main-navigation {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FF6969;
-    display: flex;
-	justify-content: flex-end;
-}
-
-
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}*/
 
 /*  HELP SECTION */
 
@@ -462,11 +342,7 @@ li a {
   background: linear-gradient(135deg, #B469FF 0%, #E169FF 100%);
 }
 
-/**
- *
- * Director's Grid
- *
-*/
+/* Director's Grid */
 
 .directors-grid figure {
   position: relative;
@@ -508,4 +384,15 @@ li a {
 .link:hover {
   text-decoration: underline;
   color: #000;
+}
+
+/* Carousel */
+
+.carousel-item {
+  height: 75vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
