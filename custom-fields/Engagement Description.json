@@ -1,7 +1,7 @@
 [
     {
         "key": "group_5c3f8bc4f03f5",
-        "title": "Project Description",
+        "title": "Engagement CPT Description",
         "fields": [
             {
                 "key": "field_5c3f8bc9c6018",
@@ -47,7 +47,7 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "engagement"
+                    "value": "engagements"
                 }
             ]
         ],

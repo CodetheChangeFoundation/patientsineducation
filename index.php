@@ -22,8 +22,6 @@ if (have_posts()):
           </div>
         </div>
       </div>
-    <?php else: ?>
-      <p><?php echo the_content(); ?></p>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
@@ -35,12 +33,12 @@ if (have_posts()):
 <?php get_template_part('template-parts/help-section')?>
 <?php get_template_part('template-parts/organizations-section')?>
 
-<?php 
+<?php
   global $post;
-  $post_slug = $post->post_name; 
+  $post_slug = $post->post_name;
   if ($post_slug == 'engagements'):
     get_template_part('content', 'archive');
-  endif; 
+  endif;
 ?>
 
 <div>
