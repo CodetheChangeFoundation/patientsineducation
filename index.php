@@ -36,6 +36,14 @@
 <?php get_template_part( 'template-parts/help-section' )?>
 <?php get_template_part( 'template-parts/organizations-section' )?>
 
+<?php 
+  global $post;
+  $post_slug=$post->post_name; 
+  if ($post_slug == 'engagements'):
+    get_template_part('content', 'archive');
+  endif; 
+?>
+
 <div>
   <?php
     if(get_field('enable_content')):
