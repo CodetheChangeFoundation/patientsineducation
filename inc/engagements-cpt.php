@@ -35,8 +35,8 @@ function pie_custom_post_type (){
      'thumbnail',
      'revisions',
    ),
-   'taxonomies' => array('category', 'post_tag'),
    'menu_position' => 5,
+   'menu_icon' => 'dashicons-clipboard',
    'exclude_from_search' => false
  );
  register_post_type('engagements',$args);
