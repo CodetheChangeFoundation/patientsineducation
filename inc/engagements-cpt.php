@@ -9,16 +9,16 @@ function pie_custom_post_type (){
   $labels = array(
    'name' => 'Engagements',
    'singular_name' => 'Engagement',
-   'add_new' => 'Add Item',
-   'all_items' => 'All Items',
-   'add_new_item' => 'Add Item',
-   'edit_item' => 'Edit Item',
-   'new_item' => 'New Item',
-   'view_item' => 'View Item',
+   'add_new' => 'Add engagement',
+   'all_items' => 'All engagements',
+   'add_new_item' => 'Add engagement',
+   'edit_item' => 'Edit engagement',
+   'new_item' => 'New engagement',
+   'view_item' => 'View engagement',
    'search_item' => 'Search Engagements',
-   'not_found' => 'No items found',
-   'not_found_in_trash' => 'No items found in trash',
-   'parent_item_colon' => 'Parent Item'
+   'not_found' => 'No engagements found',
+   'not_found_in_trash' => 'No engagements found in trash',
+   'parent_item_colon' => 'Parent engagement'
  );
  $args = array(
    'labels' => $labels,
