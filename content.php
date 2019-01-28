@@ -58,7 +58,7 @@
 							<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
 							<h5 class="mb-0 text-light-secondary"><?php the_field('short_description'); ?></h5>
 							<p class="mb-3"><?php the_field('long_description'); ?></p>
-							<?php if (the_field('link')): ?>
+							<?php if (get_field('link')): ?>
 								<span class="m-0">
 									<button class="btn btn-primary">
 										<a href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
