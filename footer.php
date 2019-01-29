@@ -5,6 +5,11 @@
  * @package patientsineducation
  */
 ?>
+      <?php
+      $leftColumn = get_field('footer_left_column', 'option');
+      $middleColumn = get_field('footer_middle_column', 'option');
+      $rightColumn = get_field('footer_right_column', 'option');
+      ?>
       <footer>
         <div class="pie-prefooter container-fluid m-0">
           <div class="row">
@@ -17,33 +22,34 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-5">
-                <h5>Patients In Education</h5>
-                <p>Patients in Education is a partnership between the Patient & Community Partnership for Education in the Office of the Vice-Provost Health at the University of British Columbia and the community.</p>
+                <h5><?php echo $leftColumn['title']; ?></h5>
+                <p><?php echo $leftColumn['content']; ?></p>
               </div>
               <div class="col-12 col-md-3">
-                <h5>Address</h5>
-                <ul>
-                  <li>Office of the Vice-Provost Health</li>
-                  <li>400-2194 Health Sciences Mall</li>
-                  <li>Vancouver, BC Canada V6T 1Z3</li>
-                  <li>Telephone : +1 (604)-822-8002</li>
-                </ul>
+                <h5><?php echo $middleColumn['title']; ?></h5>
+                <p><?php echo $middleColumn['content']; ?></p>
               </div>
               <div class="col-12 col-md-4">
-                <h5>Contact Info</h5>
+                <h5><?php echo $rightColumn['title']; ?></h5>
                 <p>
-                  <!-- <a href="">
-                    <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="fb-icon.png"]');?>" alt="Facebook" />
-                  </a> -->
-                  <a href="https://twitter.com/PatientsInEd" target="_blank">
-                    <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="twitter-icon.png"]');?>" alt="Twitter" />
-                  </a>
-                  <br>
-                  Email : patients.in.education@gmail.com
-                  <br>
-                  <button class="btn btn-primary mt-2">
-                    <a href="/contact-us/">Contact Us</a>
-                  </button>
+                  <?php if ($rightColumn['facebook_link']):; ?>
+                    <a href="<?php echo $rightColumn['facebook_link']; ?>">
+                      <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="fb-icon.png"]');?>" alt="Facebook" />
+                    </a>
+                  <?php endif; ?>
+                  <?php if ($rightColumn['twitter_link']):; ?>
+                    <a href="<?php echo $rightColumn['twitter_link']; ?>" target="_blank">
+                      <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="twitter-icon.png"]');?>" alt="Twitter" />
+                    </a>
+                  <?php endif; ?>
+                  <?php if ($rightColumn['email_address']):; ?>
+                    <br>Email: <?php echo $rightColumn['email_address']; ?><br>
+                  <?php endif; ?>
+                  <?php if ($rightColumn['button_label'] && $rightColumn['button_link']):; ?>
+                    <button class="btn btn-primary mt-2">
+                      <a href="<?php echo $rightColumn['button_link']; ?>"><?php echo $rightColumn['button_label']; ?></a>
+                    </button>
+                  <?php endif; ?>
                 </p>
               </div>
             </div>

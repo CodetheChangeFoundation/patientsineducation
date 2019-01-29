@@ -11,3 +11,4 @@ require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/bs4navwalker.php';
 require get_template_directory() . '/inc/engagements-cpt.php';
 require get_template_directory() . '/inc/shortcodes.php';
+require get_template_directory() . '/inc/theme-settings.php';
