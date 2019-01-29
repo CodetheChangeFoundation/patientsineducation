@@ -5,10 +5,63 @@
         "fields": [
             {
                 "key": "field_5c3f8bc9c6018",
-                "label": "Leading Sentence",
-                "name": "leading_sentence",
+                "label": "Short description",
+                "name": "short_description",
                 "type": "text",
-                "instructions": "Leading sentence of project description",
+                "instructions": "Short project description (50 character limit)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 50
+            },
+            {
+                "key": "field_5c3f8bf0c6019",
+                "label": "Long description",
+                "name": "long_description",
+                "type": "textarea",
+                "instructions": "Project description (no limit)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5c4d60ad22c94",
+                "label": "Engagement link",
+                "name": "link",
+                "type": "link",
+                "instructions": "Link for the engagement (optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url"
+            },
+            {
+                "key": "field_5c4d60bf22c95",
+                "label": "Engagement type",
+                "name": "engagement_type",
+                "type": "text",
+                "instructions": "Type of engagement (optional)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -23,11 +76,11 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5c3f8bf0c6019",
-                "label": "Paragraph",
-                "name": "paragraph",
-                "type": "textarea",
-                "instructions": "Project description",
+                "key": "field_5c4d60df22c96",
+                "label": "Engagement requestor",
+                "name": "requestor",
+                "type": "text",
+                "instructions": "Person or organization requesting patients (optional)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -37,16 +90,16 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             },
             {
-                "key": "field_5c4d640277b33",
-                "label": "Link",
-                "name": "link",
-                "type": "link",
-                "instructions": "",
+                "key": "field_5c4d60e922c97",
+                "label": "Date of engagement",
+                "name": "engagement_date",
+                "type": "date_picker",
+                "instructions": "Date when engagement took place (optional)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -54,7 +107,87 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "array"
+                "display_format": "F j, Y",
+                "return_format": "F j, Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5c4d610b22c98",
+                "label": "Preferred contact method",
+                "name": "contact_method",
+                "type": "text",
+                "instructions": "Preferred contact method for organization (optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c4d611f22c99",
+                "label": "Program or affiliation",
+                "name": "program",
+                "type": "text",
+                "instructions": "Program or affiliation of organization (optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5c4d613722c9a",
+                "label": "Number of patients requested",
+                "name": "patients_requested",
+                "type": "number",
+                "instructions": "Number of patients requested (optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5c4d615122c9b",
+                "label": "Commitment",
+                "name": "commitment",
+                "type": "text",
+                "instructions": "Commitment(s) from organization (optional)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [
@@ -62,16 +195,30 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "engagements"
+                    "value": "projects"
                 }
             ]
         ],
         "menu_order": 0,
         "position": "normal",
         "style": "default",
-        "label_placement": "top",
+        "label_placement": "left",
         "instruction_placement": "label",
-        "hide_on_screen": "",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
         "active": 1,
         "description": ""
     }
