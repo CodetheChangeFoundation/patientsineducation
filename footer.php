@@ -10,15 +10,17 @@
       $middleColumn = get_field('footer_middle_column', 'option');
       $rightColumn = get_field('footer_right_column', 'option');
       ?>
-      <footer>
-        <div class="pie-prefooter container-fluid m-0">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla odio, facilisis quis dapibus sed, dictum sed elit. Phasellus nullam.” – Patients In Education</p>
+      <footer class="text-white">
+        <div class="bg-secondary">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="my-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla odio, facilisis quis dapibus sed, dictum sed elit.” – Patients In Education</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="pie-footer m-0">
+        <div class="bg-dark">
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-5">
@@ -46,17 +48,17 @@
                     <br>Email: <?php echo $rightColumn['email_address']; ?><br>
                   <?php endif; ?>
                   <?php if ($rightColumn['button_label'] && $rightColumn['button_link']):; ?>
-                    <button class="btn btn-primary mt-2">
-                      <a href="<?php echo $rightColumn['button_link']; ?>"><?php echo $rightColumn['button_label']; ?></a>
-                    </button>
+                    <a class="btn btn-primary mt-2" href="<?php echo $rightColumn['button_link']; ?>" role="button"><?php echo $rightColumn['button_label']; ?></a>
                   <?php endif; ?>
                 </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 text-center mb-0">
-              <p>&copy; <?php echo date("Y"); ?> Patients In Education. Developed by <a id="ctc" href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="m-0">&copy; <?php echo date("Y"); ?> Patients In Education. Developed by <a class="text-white" href="http://codethechange.ca" target="_blank">Code the Change Foundation</a>.</p>
+              </div>
             </div>
           </div>
         </div>

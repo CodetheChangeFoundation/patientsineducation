@@ -13,11 +13,13 @@ if (have_posts()):
   while (have_posts()): the_post();
     /* Display the page title and under-navbar styling only if it's not the home page */
     if (!is_front_page()): ?>
-      <div class="container-fluid m-0">
-        <div class="pie-under-navbar row px-5 py-5">
-          <div class="col-12 text-center">
-            <h2><?php echo the_title(); ?></h2>
-            <h5><?php echo the_content(); ?></h5>
+      <div class="pie-under-navbar pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center px-5">
+              <h2><?php the_title(); ?></h2>
+              <h5><?php echo strip_tags(get_the_content(),'<br>'); ?></h5>
+            </div>
           </div>
         </div>
       </div>

@@ -1,38 +1,53 @@
-html,
+/**
+ * Additional styling
+ *
+ * @package patientsineducation
+ */
+
+/* Fix font smoothing on different browsers */
 body {
-	margin: 0;
-	color: #333;
-	background: #FFF;
-	font: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Additional utility classes */
+.rounded-2 {
+  border-radius: 0.5rem;
+}
+
+.rounded-3 {
+  border-radius: 1rem;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem;
 }
 
 .bg-grey {
   background: #F9F9F9;
 }
 
-.nav-link {
-	color: black;
+/* Footer */
+.img-fluid-icon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #000
-}
-
-#ctc {
-  color: #FFF;
-}
-
-li > a {
+/* Navigation bar */
+.navbar li > a {
   position: relative;
+  margin: 0 0.1rem;
 }
 
-li > a::before {
+/* Under navbar section */
+.pie-under-navbar {
+  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
+  background-size: 100% 100%;
+  padding-bottom: 6rem;
+}
+
+.navbar li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -47,13 +62,13 @@ li > a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > a:hover::before {
+.navbar li > a:hover::before {
   visibility: visible;
-  -webkit-transform: scaleX(0.75);
-  transform: scaleX(0.75);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-li > a.active::after {
+.navbar li > a.active::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -61,33 +76,19 @@ li > a.active::after {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000;
+  background-color: #2E2A2B;
 }
 
 /* Outreach Section */
-
-.outreach {
-  border-radius: 25px;
-  padding-top: 0px;
-  width: 200px;
-  border: 1px solid black;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-}
-
 .outreach-img {
   height: 10rem;
   width: 10rem;
   position: relative;
-  top: -4rem;
-  z-index: 2;
+  bottom: -5rem;
+  margin-top: -5rem;
 }
 
-/*  HELP SECTION */
-
+/*  Help Section */
 .help-section-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -102,19 +103,12 @@ li > a.active::after {
   overflow: hidden;
 }
 
-/* HELP AND FOUR ICON SECTION */
-
-.bg-white {
-  background-color: #FFF;
-}
-
 .section-wave {
   fill: #F9F9F9;
   stroke: none;
 }
 
-/*  FOUR ICON SECTION */
-
+/* Four icon section */
 .four-icon-section-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -137,8 +131,7 @@ li > a.active::after {
   vertical-align: middle;
 }
 
-/* ORGANIZATIONS SECTION */
-
+/* Organization section */
 .organizations-section-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -152,12 +145,7 @@ li > a.active::after {
   max-width:650px;
 }
 
-/* */
-
-.mt {
-  margin-top: 28rem;
-}
-
+/* Engagements section */
 .project-container .project-image {
   position: relative;
   margin: auto;
@@ -219,26 +207,26 @@ li > a.active::after {
   right: 0;
 }
 
-.text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
+/* .text-black, .text-black-light, .text-lead, .text-black-secondary, .text-light-secondary, .text-description {
   color: #525252 !important;
   font-style: normal;
-}
+} */
 
-.text-black {
+/* .text-black {
   font-size: 1.5rem;
   line-height: 2.25rem;
-}
+} */
 
-.text-black-light {
+/* .text-black-light {
   font-size: 1rem;
   line-height: 1.5rem;
-}
+} */
 
-.font-weight-bold {
+/* .font-weight-bold {
   font-weight: bold !important;
-}
+} */
 
-.text-black-secondary {
+/* .text-black-secondary {
   font-size: 2.25rem;
 }
 
@@ -248,11 +236,11 @@ li > a.active::after {
 
 .text-description {
   font-size: 1.25rem;
-}
-
+} */
+/* 
 .text-lead {
   font-size: 1.5rem;
-}
+} */
 
 .card {
   background: #F9F9F9 !important;

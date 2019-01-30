@@ -60,9 +60,7 @@
 							<p class="mb-3"><?php the_field('long_description'); ?></p>
 							<?php if (get_field('link')): ?>
 								<span class="m-0">
-									<button class="btn btn-primary">
-										<a href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
-									</button>
+									<a class="btn btn-primary" href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
 								</span>
 							<?php endif; ?>
 						</div>

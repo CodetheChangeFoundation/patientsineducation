@@ -7,32 +7,3 @@ Description: Custom built theme for Patients in Education
 Version: 1.0.0
 Text Domain: patientsineducation
 */
-
-/* UNDER-NAVBAR */
-.pie-under-navbar {
-  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
-  background-size: 100% 100%;
-}
-
-.pie-under-navbar p {
-  line-height: 1.875rem;
-  padding: 1rem 15% 4rem;
-}
-
-/* FOOTER */
-.pie-footer {
-  background: #2E2A2B;
-  color: #F9F9F9;
-  line-height: 1.875rem;
-  padding: 3rem 1.5rem 1.25rem;
-}
-
-.pie-prefooter {
-  background: #525252;
-  color: #F9F9F9;
-}
-
-.pie-footer ul, li {
-  list-style: none;
-  padding-left: 0;
-}
