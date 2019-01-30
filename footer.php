@@ -7,9 +7,9 @@
 ?>
       <footer>
         <div class="pie-prefooter container-fluid m-0">
-          <div class="row">
+          <div class="row py-2">
             <div class="col-12 text-center">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla odio, facilisis quis dapibus sed, dictum sed elit. Phasellus nullam.” – Patients In Education</p>
+              <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla odio, facilisis quis dapibus sed, dictum sed elit. Phasellus nullam.” – Patients In Education</p>
             </div>
           </div>
         </div>
