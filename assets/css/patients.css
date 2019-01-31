@@ -64,6 +64,26 @@ li > a.active::after {
   background-color: #000;
 }
 
+li > a.cftab::before {
+  height: 0px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a.cftab:hover::before {
+  visibility: hidden;
+}
+
+li > a.cftab.active::after {
+  height: 0px;
+}
+
+a.cftab:hover {
+  text-decoration: none;
+}
+
 /* Outreach Section */
 
 .outreach {
