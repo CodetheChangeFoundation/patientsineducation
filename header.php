@@ -29,7 +29,7 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-md navbar-light bg-primary py-3 sticky-top border-bottom border-white">
         <div class="container">
-          <a class="navbar-brand font-weight-bold px-3" href="<?php echo get_home_url() ?>">Patients in Education</a>
+          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">Patients in Education</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
