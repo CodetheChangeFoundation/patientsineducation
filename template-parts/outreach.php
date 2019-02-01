@@ -21,8 +21,8 @@ if (get_field('enable_outreach_section')):
               alt="<?php echo get_sub_field('image')['alt']; ?>"
               class="rounded-circle outreach-img"
             />
-            <div class="border rounded-4">
-              <div class="col-12 pt-5 mt-5">
+            <div class="border rounded-4 p-2">
+              <div class="col-12 pt-5 px-4 mt-5">
                 <h1 class="t1"><?php echo the_sub_field('title'); ?></h1>
                 <p><?php echo the_sub_field('content'); ?></p>
               </div>
