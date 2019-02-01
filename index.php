@@ -27,13 +27,15 @@ if (have_posts()):
   <?php endwhile; ?>
 <?php endif; ?>
 
-<?php get_template_part('template-parts/contact-forms')?>
 <?php get_template_part('template-parts/carousel')?>
 <?php get_template_part('template-parts/paragraph')?>
-<?php get_template_part('template-parts/directors')?>
 <?php get_template_part('template-parts/help-section')?>
 <?php get_template_part('template-parts/outreach'); ?>
+<?php get_template_part('template-parts/four-icon-section'); ?>
+<?php get_template_part('template-parts/more-about-pie'); ?>
+<?php get_template_part('template-parts/directors')?>
 <?php get_template_part('template-parts/organizations-section')?>
+<?php get_template_part('template-parts/contact-forms')?>
 
 <?php
   global $post;
@@ -42,17 +44,5 @@ if (have_posts()):
     get_template_part('content', 'post');
   endif;
 ?>
-
-
-<?php if (get_field('enable_content') && get_field('additional_content')): ?>
-  <div>
-    <?php the_field('additional_content'); ?>
-  </div>
-<?php endif; ?>
-
-<?php get_template_part('template-parts/four-icon-section'); ?>
-<div class="container mx-0 px-0 mt-4 mw-100">
-  <?php get_template_part('template-parts/more-about-pie'); ?>
-</div>
 
 <?php get_footer(); ?>

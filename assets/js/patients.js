@@ -7,6 +7,6 @@ $('.show-more-button').on('click', function (event) {
    $('.collapse.show').collapse('show');
 });
 
-$('.closeIcon').on('click', function () {
+$('.close-icon').on('click', function () {
    $('.collapse.show').collapse('hide');
 });
