@@ -23,11 +23,7 @@
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-100 d-block"/>
                 <?php if (!empty(get_sub_field('link'))): ?>
                   <div class="button-container p-1">
-                    <button class="btn btn-primary">
-                      <a class="link" href="<?php echo the_sub_field('link') ?>" target="_blank">
-                        Learn More
-                      </a>
-                    </button>
+                    <a class="btn btn-primary" href="<?php echo the_sub_field('link') ?>" target="_blank">Learn More</a>
                   </div>
                 <?php endif; ?>
               </div>

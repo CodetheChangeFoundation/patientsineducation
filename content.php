@@ -42,27 +42,25 @@
 					<div class="row">
 				<?php endif; ?>
 					<div class="project-container mb-4 col-12 col-md-6 col-lg-4 order-md-<?php echo $count; ?> order-lg-<?php echo $count; ?>">
-						<a class="show-more-button" data-toggle="collapse" href="#<?php echo $post->post_name; ?>" role="button"
+						<a class="show-more-button text-body" data-toggle="collapse" href="#<?php echo $post->post_name; ?>" role="button"
 							aria-expanded="false" aria-controls="<?php echo $post->post_name; ?>">
-							<div class="project-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
-								<div class="project-description p-2">
-									<h6 class="m-0 text-black font-weight-bold"><?php the_title(); ?></h6>
+							<div class="project-image border rounded-2" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
+								<div class="project-description px-3 py-2 rounded-2 bg-light">
+									<h4 class="m-0 text-black font-weight-bold"><?php the_title(); ?></h4>
 									<h6 class="m-0 text-black-light font-weight-bold"><?php the_field('short_description'); ?></h6>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="col-12 collapse order-md-<?php echo $order_md; ?> order-lg-<?php echo $order_lg; ?>" data-parent="#engagements" id="<?php echo $post->post_name; ?>">
-						<div class="mb-4 card card-body">
-							<p class="closeIcon pb-2 pt-2 pr-3 pl-3" role="button"> &times; </p>
-							<h3 class="text-black-secondary pr-5"><?php the_title(); ?></h3>
-							<h5 class="mb-0 text-light-secondary"><?php the_field('short_description'); ?></h5>
-							<p class="mb-3"><?php the_field('long_description'); ?></p>
+						<div class="rounded-2 card card-body bg-light border">
+							<a class="close-icon text-primary btn btn-link font-weight-bold" role="button">&times;</a>
+							<h3 class="pr-5"><?php the_title(); ?></h3>
+							<h5><?php the_field('short_description'); ?></h5>
+							<p><?php the_field('long_description'); ?></p>
 							<?php if (get_field('link')): ?>
 								<span class="m-0">
-									<button class="btn btn-primary">
-										<a href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
-									</button>
+									<a class="btn btn-primary" href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
 								</span>
 							<?php endif; ?>
 						</div>
