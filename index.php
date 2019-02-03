@@ -33,6 +33,7 @@ if (have_posts()):
 <?php get_template_part('template-parts/outreach'); ?>
 <?php get_template_part('template-parts/four-icon-section'); ?>
 <?php get_template_part('template-parts/more-about-pie'); ?>
+<?php get_template_part('template-parts/member-sign-up')?>
 <?php get_template_part('template-parts/directors')?>
 <?php get_template_part('template-parts/organizations-section')?>
 <?php get_template_part('template-parts/contact-forms')?>
@@ -41,7 +42,7 @@ if (have_posts()):
   global $post;
   $post_slug = $post->post_name;
   if ($post_slug == 'engagements'):
-    get_template_part('content', 'post');
+    get_template_part('template-parts/engagements-grid');
   endif;
 ?>
 
