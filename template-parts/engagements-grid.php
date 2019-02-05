@@ -46,17 +46,18 @@
 							aria-expanded="false" aria-controls="<?php echo $post->post_name; ?>">
 							<div class="project-image border rounded-2" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
 								<div class="project-description px-3 py-2 rounded-2 bg-light">
-									<h4 class="m-0 text-black font-weight-bold"><?php the_title(); ?></h4>
-									<h6 class="m-0 text-black-light font-weight-bold"><?php the_field('short_description'); ?></h6>
+									<h4 class="m-0"><?php the_title(); ?></h4>
+									<h6 class="m-0"><?php the_field('short_description'); ?></h6>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="col-12 collapse order-md-<?php echo $order_md; ?> order-lg-<?php echo $order_lg; ?>" data-parent="#engagements" id="<?php echo $post->post_name; ?>">
-						<div class="rounded-2 card card-body bg-light border">
+						<div class="rounded-2 card card-body border">
 							<a class="close-icon text-primary btn btn-link font-weight-bold" role="button">&times;</a>
 							<h3 class="pr-5"><?php the_title(); ?></h3>
 							<h5><?php the_field('short_description'); ?></h5>
+							<hr>
 							<p><?php the_field('long_description'); ?></p>
 							<?php if (get_field('link')): ?>
 								<span class="m-0">

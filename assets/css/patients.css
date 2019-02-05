@@ -23,8 +23,25 @@ body {
   border-radius: 1.5rem !important;
 }
 
+.rounded-right-5 {
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+}
+
+.rounded-left-5 {
+  border-top-left-radius: 3rem !important;
+  border-bottom-left-radius: 3rem !important;
+}
+
 .bg-grey {
   background: #F9F9F9;
+}
+
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
 }
 
 /* Footer */
@@ -45,6 +62,8 @@ body {
 .navbar li > a {
   position: relative;
   margin: 0 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbar li > a::before {
@@ -54,7 +73,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #2E2A2B;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -211,62 +230,43 @@ body {
 }
 
 /* About Us */
-.row-odd {
-  margin-left: -250px;
+.more-about-pie-image {
+  min-height: 12rem;
 }
 
-.row-even {
-  margin-right: -250px;
-}
-
-.row-odd, .row-even {
-  width: 100%;
-}
-
-#more-about-pie-flex {
-  overflow: hidden;
-}
-
-.thumbnail, .col-even, .col-odd {
-  border-radius: 3rem;
-  position: relative;
-  height: 16.3rem;
-  width: 16.3rem;
-  overflow: hidden;
-}
-
-.thumbnail {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-}
-
-.col-even, .col-odd {
-  border: 0.125rem solid #525252;
-  overflow: scroll;
-}
-
-.col-even {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .row-odd {
-    margin-left: 0;
+@media (min-width: 768px) {
+  .stretch-left-md-5 {
+    left: calc(-1 * (100vw - 100%) / 2);
+    margin-right: calc(-1 * (100vw - 100%) / 2);
+    max-width: calc((100vw - 100%) / 2 + 41.6666667%) !important;
+    flex-basis: calc((100vw - 100%) / 2 + 41.6666667%) !important;
   }
 
-  .row-even {
-    margin-right: 0;
+  .stretch-right-md-5 {
+    right: calc(-1 * (100vw - 100%) / 2);
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+    max-width: calc((100vw - 100%) / 2 + 41.6666667%) !important;
+    flex-basis: calc((100vw - 100%) / 2 + 41.6666667%) !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .stretch-left-md-5 {
+    left: calc(-1 * (100vw - 100%) / 2);
   }
 
-  .col-even, .col-odd, .about-pie-img {
-    width: 100%;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    text-align: left;
+  .stretch-right-md-5 {
+    right: calc(-1 * (100vw - 100%) / 2);
+  }
+}
+
+@media (max-width: 576px) {
+  .stretch-left-md-5 {
+    left: -15px;
+  }
+
+  .stretch-right-md-5 {
+    margin-left: 15px;
   }
 }
 
@@ -274,7 +274,7 @@ body {
 .directors-grid figure {
   position: relative;
   overflow: hidden;
-  max-width: 40rem;
+  max-width: 25rem;
 }
 
 .directors-grid figure img {
