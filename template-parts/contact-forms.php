@@ -10,17 +10,17 @@ if (get_field('enable_patients_form') || get_field('enable_volunteers_form') || 
     <ul class="nav nav-tabs px-5" role="tablist">
       <?php if (get_field('enable_patients_form')): ?>
         <li class="nav-item">
-          <a class="nav-link cftab active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true">Request for Patients</a>
+          <a class="nav-link cftab active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true"><?php echo get_field('cf_title_1'); ?></a>
         </li>
       <?php endif; ?>
       <?php if (get_field('enable_volunteers_form')): ?>
         <li class="nav-item">
-          <a class="nav-link cftab<?php if (!get_field('enable_patients_form')): ?> active<?php endif; ?> px-4" id="volunteers-tab" data-toggle="tab" href="#volunteers-form" role="tab" aria-controls="volunteers-form" aria-selected="<?php echo((get_field('enable_patients_form')) ? 'false' : 'true');?>">Request for Volunteers</a>
+          <a class="nav-link cftab<?php if (!get_field('enable_patients_form')): ?> active<?php endif; ?> px-4" id="volunteers-tab" data-toggle="tab" href="#volunteers-form" role="tab" aria-controls="volunteers-form" aria-selected="<?php echo((get_field('enable_patients_form')) ? 'false' : 'true');?>"><?php echo get_field('cf_title_2'); ?></a>
         </li>
       <?php endif; ?>
       <?php if (get_field('enable_general_form')): ?>
         <li class="nav-item">
-          <a class="nav-link cftab<?php if (!((get_field('enable_patients_form')) || (get_field('enable_volunteers_form')))): ?> active<?php endif; ?> px-4" id="general-tab" data-toggle="tab" href="#general-form" role="tab" aria-controls="general-form" aria-selected="<?php echo(((get_field('enable_patients_form')) || (get_field('enable_volunteers_form'))) ? 'false' : 'true');?>">General Inquiry</a>
+          <a class="nav-link cftab<?php if (!((get_field('enable_patients_form')) || (get_field('enable_volunteers_form')))): ?> active<?php endif; ?> px-4" id="general-tab" data-toggle="tab" href="#general-form" role="tab" aria-controls="general-form" aria-selected="<?php echo(((get_field('enable_patients_form')) || (get_field('enable_volunteers_form'))) ? 'false' : 'true');?>"><?php echo get_field('cf_title_3'); ?></a>
         </li>
       <?php endif; ?>
       <li class="nav-item px-4">
