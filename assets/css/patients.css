@@ -98,6 +98,22 @@ body {
   background-color: #2E2A2B;
 }
 
+li > a.cftab::before {
+  height: 0px;
+}
+
+li > a.cftab:hover::before {
+  visibility: hidden;
+}
+
+li > a.cftab.active::after {
+  height: 0px;
+}
+
+a.cftab:hover {
+  text-decoration: none;
+}
+
 /* Outreach Section */
 .outreach-img {
   height: 10rem;
