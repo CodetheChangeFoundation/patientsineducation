@@ -23,11 +23,9 @@ if (get_field('enable_patients_form') || get_field('enable_volunteers_form') || 
           <a class="nav-link cftab<?php if (!((get_field('enable_patients_form')) || (get_field('enable_volunteers_form')))): ?> active<?php endif; ?> px-4" id="general-tab" data-toggle="tab" href="#general-form" role="tab" aria-controls="general-form" aria-selected="<?php echo(((get_field('enable_patients_form')) || (get_field('enable_volunteers_form'))) ? 'false' : 'true');?>"><?php echo get_field('cf_title_3'); ?></a>
         </li>
       <?php endif; ?>
-      <li class="nav-item px-4">
-        <button class="btn btn-primary mt-1">
-          <a class="cftab" href="mailto:patients.in.education@gmail.com">Email Us Directly</a>
-        </button>
-      </li>
+      <div class="nav-item px-4">
+        <a class="btn btn-primary" href="mailto:patients.in.education@gmail.com">Email Us Directly</a>
+      </div>
     </ul>
     <div class="tab-content cf-form row">
       <div class="tab-pane fade <?php if (get_field('enable_patients_form')): ?>show active <?php endif; ?>col-11 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">

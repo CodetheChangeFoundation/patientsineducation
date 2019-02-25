@@ -26,10 +26,27 @@
   </head>
 
   <body <?php body_class() ?>>
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-md navbar-light bg-danger py-3 sticky-top border-bottom border-white">
+    <?php
+    $upcomingEvent = get_field('upcoming_event', 'option');
+    if (is_front_page() && $upcomingEvent['name']): 
+    ?>
+      <div id="notification-banner" class="bg-dark">
         <div class="container">
-          <a class="navbar-brand font-weight-bold px-3" href="<?php echo get_home_url() ?>">Patients in Education</a>
+          <div class="row">
+            <div class="col-12 text-white text-center d-flex flex-row align-items-center justify-content-center py-1">
+              <h5 class="m-0"><?php echo $upcomingEvent['name']; ?> <?php if ($upcomingEvent['date']): ?>on <?php echo $upcomingEvent['date']; endif;?></h5>
+              <?php if ($upcomingEvent['button_text']): ?>
+                <a class="text-dark btn btn-primary btn-sm ml-4" role="button" href="<?php echo $upcomingEvent['button_link']; ?>"><?php echo $upcomingEvent['button_text']; ?></a>
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-md navbar-light bg-primary py-3 sticky-top border-bottom border-white">
+        <div class="container">
+          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">Patients in Education</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,4 +66,3 @@
           ?>
         </div>
       </nav>
-      <hr/>

@@ -49,11 +49,7 @@ if (get_field('enable_organizations')):
 
                 <td class="text-center">
                   <?php if (!empty(get_sub_field('website_link'))): ?>
-                    <button class="btn btn-primary">
-                      <a href="<?php echo the_sub_field('website_link'); ?>" target="_blank">
-                        Learn More
-                      </a>
-                    </button>
+                      <a class="btn btn-primary" href="<?php echo the_sub_field('website_link'); ?>" target="_blank">Learn More</a>
                   <?php endif; ?>
                 </td>
               </tr>
