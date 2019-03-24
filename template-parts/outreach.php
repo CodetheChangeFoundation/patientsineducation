@@ -13,10 +13,10 @@ if (get_field('enable_outreach_section')):
       </div>
     </div>
     <div class="row text-center">
-      <?php 
+      <?php
       $i = 0;
       while (have_rows('outreach')): the_row(); ?>
-        <?php 
+        <?php
         $spacing = "col-12 col-lg-4 pt-4";
         $classes = ($i >= 3 ? $spacing." d-none" : $spacing);
         if ($i == 3):
