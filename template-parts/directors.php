@@ -23,7 +23,6 @@
               $image = get_sub_field('image');
               $name = get_sub_field('name');
               $desc = get_sub_field('description');
-              $link;
               if (!empty($image) && !empty($name) && !empty($desc)):
               ?>
                 <figure class="m-auto">
