@@ -13,9 +13,20 @@ if (get_field('enable_outreach_section')):
       </div>
     </div>
     <div class="row text-center">
-      <?php while (have_rows('outreach')): the_row(); ?>
+      <?php 
+      $i = 0;
+      while (have_rows('outreach')): the_row(); ?>
+        <?php 
+        $spacing = "col-12 col-lg-4 pt-4";
+        $classes = ($i >= 3 ? $spacing." d-none" : $spacing);
+        if ($i == 3):
+        ?>
+          <div class="col-12 pt-3 pb-3">
+            <a class="btn btn-primary" id="outreach-archive">Show Archived</a>
+          </div>
+        <?php endif; ?>
         <?php if (!empty(get_sub_field('image')) && !empty(get_sub_field('content'))): ?>
-          <div class="col-12 col-lg-4 pt-4">
+          <div class="<?php echo $classes; ?>" id="<?php echo "outreach-".$i; ?>">
             <img
               src="<?php echo get_sub_field('image')['url']; ?>"
               alt="<?php echo get_sub_field('image')['alt']; ?>"
@@ -29,6 +40,7 @@ if (get_field('enable_outreach_section')):
             </div>
           </div>
         <?php endif; ?>
+        <?php $i++; ?>
       <?php endwhile; ?>
     </div>
   </div>
