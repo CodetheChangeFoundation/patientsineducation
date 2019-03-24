@@ -66,7 +66,7 @@
 									if (!empty(get_field('link')['title'])):
 										echo get_field('link')['title'];
 									else:
-										echo "Learn More";
+										echo "Learn More"; 
 									endif;
 									?>
 									</a>
