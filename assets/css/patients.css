@@ -44,20 +44,6 @@ body {
   background-position: center center;
 }
 
-/* Footer */
-.img-fluid-icon {
-  max-width: 2rem;
-  max-height: 2rem;
-  margin: 0.5rem;
-}
-
-/* Under navbar section */
-.pie-under-navbar {
-  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
-  background-size: 100% 100%;
-  padding-bottom: 6rem;
-}
-
 /* Navigation bar */
 .navbar li > a {
   position: relative;
@@ -112,6 +98,24 @@ li > a.cftab.active::after {
 
 a.cftab:hover {
   text-decoration: none;
+}
+
+/* Under navbar section */
+.pie-under-navbar {
+  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
+  background-size: 100% 100%;
+  padding-bottom: 6rem;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 50vh;
+  min-height: 16rem;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Outreach Section */
@@ -329,13 +333,11 @@ a.cftab:hover {
   color: #000;
 }
 
-/* Carousel */
-.carousel-item {
-  height: 50vh;
-  min-height: 16rem;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+
+/* Footer */
+.img-fluid-icon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0.5rem;
 }

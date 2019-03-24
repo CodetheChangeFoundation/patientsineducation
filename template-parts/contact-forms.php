@@ -4,38 +4,50 @@
  *
  * @package patientsineducation
  */
-if (get_field('enable_patients_form') || get_field('enable_volunteers_form') || get_field('enable_general_form')):
 ?>
-  <div class="mt-5">
-    <ul class="nav nav-tabs px-5" role="tablist">
-      <?php if (get_field('enable_patients_form')): ?>
-        <li class="nav-item">
-          <a class="nav-link cftab active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true"><?php echo get_field('cf_title_1'); ?></a>
+
+<?php 
+  $form1 = get_field('form_1');
+  $form2 = get_field('form_2');
+  $form3 = get_field('form_3');
+  if ($form1['enable'] || $form2['enable'] || $form3['enable']):
+?>
+  <div class="border-bottom">
+    <ul class="nav nav-tabs px-5 mt-3 container border-0" role="tablist">
+      <?php if ($form1['enable']): ?>
+        <li class="nav-item mx-1">
+          <a class="nav-link cftab active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true"><?php echo $form1['title']; ?></a>
         </li>
       <?php endif; ?>
-      <?php if (get_field('enable_volunteers_form')): ?>
-        <li class="nav-item">
-          <a class="nav-link cftab<?php if (!get_field('enable_patients_form')): ?> active<?php endif; ?> px-4" id="volunteers-tab" data-toggle="tab" href="#volunteers-form" role="tab" aria-controls="volunteers-form" aria-selected="<?php echo((get_field('enable_patients_form')) ? 'false' : 'true');?>"><?php echo get_field('cf_title_2'); ?></a>
+      <?php if ($form2['enable']): ?>
+        <li class="nav-item mx-1">
+          <a class="nav-link cftab<?php if (!$form1['enable']): ?> active<?php endif; ?> px-4" id="volunteers-tab" data-toggle="tab" href="#volunteers-form" role="tab" aria-controls="volunteers-form" aria-selected="<?php echo($form1['enable'] ? 'false' : 'true');?>"><?php echo $form2['title']; ?></a>
         </li>
       <?php endif; ?>
-      <?php if (get_field('enable_general_form')): ?>
-        <li class="nav-item">
-          <a class="nav-link cftab<?php if (!((get_field('enable_patients_form')) || (get_field('enable_volunteers_form')))): ?> active<?php endif; ?> px-4" id="general-tab" data-toggle="tab" href="#general-form" role="tab" aria-controls="general-form" aria-selected="<?php echo(((get_field('enable_patients_form')) || (get_field('enable_volunteers_form'))) ? 'false' : 'true');?>"><?php echo get_field('cf_title_3'); ?></a>
+      <?php if ($form3['enable']): ?>
+        <li class="nav-item mx-1">
+          <a class="nav-link cftab<?php if (!$form2['enable']): ?> active<?php endif; ?> px-4" id="general-tab" data-toggle="tab" href="#general-form" role="tab" aria-controls="general-form" aria-selected="<?php echo($form2['enable'] ? 'false' : 'true');?>"><?php echo $form3['title']; ?></a>
         </li>
       <?php endif; ?>
-      <div class="nav-item px-4">
+      <div class="nav-item mx-1 px-4">
         <a class="btn btn-primary" href="mailto:patients.in.education@gmail.com">Email Us Directly</a>
       </div>
     </ul>
-    <div class="tab-content cf-form row">
-      <div class="tab-pane fade <?php if (get_field('enable_patients_form')): ?>show active <?php endif; ?>col-11 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">
-        <?php echo do_shortcode('[contact-form-7 id="140" title="Request for Patients"]');?>
-      </div>
-      <div class="tab-pane fade <?php if (get_field('enable_volunteers_form') && !get_field('enable_patients_form')): ?>show active <?php endif; ?>col-11 mx-auto" id="volunteers-form" role="tabpanel" aria-labelledby="volunteers-tab">
-        <?php echo do_shortcode('[contact-form-7 id="141" title="Request for Volunteers"]');?>
-      </div>
-      <div class="tab-pane fade <?php if (get_field('enable_general_form') && !get_field('enable_patients_form') && !get_field('enable_volunteers_form')): ?>show active <?php endif; ?>col-11 mx-auto" id="general-form" role="tabpanel" aria-labelledby="general-tab">
-        <?php echo do_shortcode('[contact-form-7 id="142" title="General Inquiry"]');?>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tab-content cf-form row">
+          <div class="tab-pane fade <?php if ($form1['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">
+            <?php echo do_shortcode($form1['shortcode']);?>
+          </div>
+          <div class="tab-pane fade <?php if ($form2['enable'] && !$form1['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="volunteers-form" role="tabpanel" aria-labelledby="volunteers-tab">
+            <?php echo do_shortcode($form2['shortcode']);?>
+          </div>
+          <div class="tab-pane fade <?php if ($form3['enable'] && !$form1['enable'] && !$form2['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="general-form" role="tabpanel" aria-labelledby="general-tab">
+            <?php echo do_shortcode($form3['shortcode']);?>
+          </div>
+        </div>
       </div>
     </div>
   </div>
