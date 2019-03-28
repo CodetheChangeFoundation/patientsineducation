@@ -1,11 +1,11 @@
 {
   "ignore": [
     "adjoining-classes",
-    "order-alphabetical"
+    "order-alphabetical",
+    "important"
   ],
   "warnings": [
-    "ids",
-    "important"
+    "ids"
   ],
   "errors": [
     "display-property-grouping",

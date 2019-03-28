@@ -75,6 +75,7 @@ body {
   left: 0;
   background-color: #2E2A2B;
   visibility: hidden;
+  -ms-transform: scaleX(0);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -83,6 +84,7 @@ body {
 
 .navbar li > a:hover::before {
   visibility: visible;
+  -ms-transform: scaleX(1);
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -99,7 +101,7 @@ body {
 }
 
 li > a.cftab::before {
-  height: 0px;
+  height: 0;
 }
 
 li > a.cftab:hover::before {
@@ -107,7 +109,7 @@ li > a.cftab:hover::before {
 }
 
 li > a.cftab.active::after {
-  height: 0px;
+  height: 0;
 }
 
 a.cftab:hover {
@@ -199,6 +201,7 @@ a.cftab:hover {
   display: block;
   padding-top: 100%;
   position: relative;
+  background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
   opacity: 0;
   border-radius: 0.5rem;
