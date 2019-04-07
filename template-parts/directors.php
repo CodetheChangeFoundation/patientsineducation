@@ -30,7 +30,15 @@
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-100 d-block"/>
                     <?php if (!empty(get_sub_field('link'))): ?>
                       <div class="button-container p-1">
-                        <a class="btn btn-primary" href="<?php echo the_sub_field('link') ?>" target="_blank">Learn More</a>
+                        <a class="btn btn-primary" href="<?php echo get_sub_field('link')['url'] ?>" target="_blank">
+                          <?php
+                          if (!empty(get_sub_field('link')['title'])):
+                            echo get_sub_field('link')['title'];
+                          else:
+                            echo "Learn More";
+                          endif;
+                          ?>
+                        </a>
                       </div>
                     <?php endif; ?>
                   </div>

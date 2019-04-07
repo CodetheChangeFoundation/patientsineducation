@@ -61,7 +61,15 @@
 							<p><?php the_field('long_description'); ?></p>
 							<?php if (get_field('link')): ?>
 								<span class="m-0">
-									<a class="btn btn-primary" href="<?php echo the_field('link') ?>" target="_blank">Learn More</a>
+									<a class="btn btn-primary" href="<?php echo get_field('link')['url']; ?>" target="_blank">
+									<?php
+									if (!empty(get_field('link')['title'])):
+										echo get_field('link')['title'];
+									else:
+										echo "Learn More"; 
+									endif;
+									?>
+									</a>
 								</span>
 							<?php endif; ?>
 						</div>

@@ -72,7 +72,7 @@
                 },
                 "collapsed": "",
                 "min": 0,
-                "max": 3,
+                "max": 0,
                 "layout": "table",
                 "button_label": "Add Outreach Section",
                 "sub_fields": [
@@ -156,7 +156,7 @@
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
-        "active": 1,
+        "active": true,
         "description": ""
     }
 ]
