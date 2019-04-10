@@ -121,10 +121,14 @@ a.cftab:hover {
 }
 
 .wave {
-  background-image: url(/wp-content/themes/patientsineducation/assets/svg/wave.svg);
-  background-size: 100% 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  margin: -5px;
+}
+
+.wave-img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 /* Carousel */
