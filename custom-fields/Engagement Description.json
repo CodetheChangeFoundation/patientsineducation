@@ -26,7 +26,7 @@
                 "key": "field_5c3f8bf0c6019",
                 "label": "Long description",
                 "name": "long_description",
-                "type": "textarea",
+                "type": "wysiwyg",
                 "instructions": "Project description (no limit)",
                 "required": 0,
                 "conditional_logic": 0,
@@ -36,10 +36,10 @@
                     "id": ""
                 },
                 "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": "br"
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
             },
             {
                 "key": "field_5c4d60ad22c94",
@@ -195,11 +195,11 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "projects"
+                    "value": "engagements"
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 40,
         "position": "normal",
         "style": "default",
         "label_placement": "left",
@@ -219,7 +219,7 @@
             "tags",
             "send-trackbacks"
         ],
-        "active": 1,
+        "active": true,
         "description": ""
     }
 ]

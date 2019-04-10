@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="container accordion" id="engagements">
+<div class="container accordion mb-4" id="engagements">
 	<?php 
 	$args = array(
 		'post_type'=> 'engagements', 
@@ -44,7 +44,7 @@
 					<div class="project-container mb-4 col-12 col-md-6 col-lg-4 order-md-<?php echo $count; ?> order-lg-<?php echo $count; ?>">
 						<a class="show-more-button text-body" data-toggle="collapse" href="#<?php echo $post->post_name; ?>" role="button"
 							aria-expanded="false" aria-controls="<?php echo $post->post_name; ?>">
-							<div class="project-image border rounded-2" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
+							<div class="project-image border rounded-2 mt-4" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
 								<div class="project-description px-3 py-2 rounded-2 bg-light">
 									<h4 class="m-0"><?php the_title(); ?></h4>
 									<h6 class="m-0"><?php the_field('short_description'); ?></h6>

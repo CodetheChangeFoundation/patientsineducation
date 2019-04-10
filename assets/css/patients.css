@@ -45,6 +45,11 @@ body {
 }
 
 /* Navigation bar */
+.navbar ul, ul.nav-tabs {
+  font-family: unset;
+  font-weight: unset;
+}
+
 .navbar li > a {
   position: relative;
   margin: 0 0.1rem;
@@ -104,9 +109,17 @@ a.cftab:hover {
 
 /* Under navbar section */
 .pie-under-navbar {
-  background-image: url(/wp-content/themes/patientsineducation/assets/svg/under-navbar.svg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #FF6969, #FEA945);
+}
+
+.wave {
+  background-image: url(/wp-content/themes/patientsineducation/assets/svg/wave.svg);
   background-size: 100% 100%;
-  padding-bottom: 6rem;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 /* Carousel */
@@ -335,8 +348,6 @@ a.cftab:hover {
   text-decoration: underline;
   color: #000;
 }
-
-
 
 /* Footer */
 .img-fluid-icon {

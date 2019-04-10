@@ -7,7 +7,7 @@
 if (get_field('enable_four_icon_section')):
 ?>
   <div class="four-icon-section-wave">
-    <svg viewBox="0 0 500 110" preserveAspectRatio="none" class="bg-grey w-100 h-100">
+    <svg viewBox="0 0 500 110" preserveAspectRatio="none" class="w-100 h-100">
       <path class="section-wave" d="M 0 50 Q 83 100 167 50 Q 250 0 333 50 Q 417 100 500 50 L500.00,150.00 L0,150.00 Z"></path>
     </svg>
   </div>

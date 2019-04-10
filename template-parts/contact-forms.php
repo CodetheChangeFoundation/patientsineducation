@@ -13,7 +13,7 @@
   if ($form1['enable'] || $form2['enable'] || $form3['enable']):
 ?>
   <div class="border-bottom">
-    <ul class="nav nav-tabs px-5 mt-3 container border-0" role="tablist">
+    <ul class="nav nav-tabs mt-3 container border-0" role="tablist">
       <?php if ($form1['enable']): ?>
         <li class="nav-item mx-1">
           <a class="nav-link cftab active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true"><?php echo $form1['title']; ?></a>
@@ -38,13 +38,13 @@
     <div class="row">
       <div class="col-12">
         <div class="tab-content cf-form row">
-          <div class="tab-pane fade <?php if ($form1['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">
+          <div class="tab-pane fade <?php if ($form1['enable']): ?>show active <?php endif; ?>col-12 my-4 mx-auto" id="patients-form" role="tabpanel" aria-labelledby="patients-tab">
             <?php echo do_shortcode($form1['shortcode']);?>
           </div>
-          <div class="tab-pane fade <?php if ($form2['enable'] && !$form1['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="volunteers-form" role="tabpanel" aria-labelledby="volunteers-tab">
+          <div class="tab-pane fade <?php if ($form2['enable'] && !$form1['enable']): ?>show active <?php endif; ?>col-12 my-4 mx-auto" id="volunteers-form" role="tabpanel" aria-labelledby="volunteers-tab">
             <?php echo do_shortcode($form2['shortcode']);?>
           </div>
-          <div class="tab-pane fade <?php if ($form3['enable'] && !$form1['enable'] && !$form2['enable']): ?>show active <?php endif; ?>col-11 mx-auto" id="general-form" role="tabpanel" aria-labelledby="general-tab">
+          <div class="tab-pane fade <?php if ($form3['enable'] && !$form1['enable'] && !$form2['enable']): ?>show active <?php endif; ?>col-12 my-4 mx-auto" id="general-form" role="tabpanel" aria-labelledby="general-tab">
             <?php echo do_shortcode($form3['shortcode']);?>
           </div>
         </div>

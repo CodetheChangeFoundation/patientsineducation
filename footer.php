@@ -10,7 +10,7 @@
       $middleColumn = get_field('footer_middle_column', 'option');
       $rightColumn = get_field('footer_right_column', 'option');
       ?>
-      <footer class="text-white mt-5">
+      <footer class="text-white">
         <!-- <div class="bg-secondary">
           <div class="container">
             <div class="row">

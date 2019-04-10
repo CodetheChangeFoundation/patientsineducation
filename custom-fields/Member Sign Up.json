@@ -1,13 +1,13 @@
 [
     {
-        "key": "group_5c5a8ce86b2a7",
-        "title": "Contact Forms Titles",
+        "key": "group_5c5688ed711df",
+        "title": "Member Sign Up",
         "fields": [
             {
-                "key": "field_5c5a8dd66d215",
-                "label": "First Contact Form Title",
-                "name": "cf_title_1",
-                "type": "text",
+                "key": "field_5c5688f324b28",
+                "label": "Enable Member Sign Up",
+                "name": "enable_member_sign_up",
+                "type": "true_false",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -16,16 +16,43 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Request for Patients",
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5c568a2124b29",
+                "label": "Form Title",
+                "name": "member_sign_up_form_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5c5688f324b28",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
             },
             {
-                "key": "field_5c5a8ea36d216",
-                "label": "Second Contact Form Title",
-                "name": "cf_title_2",
+                "key": "field_5c568cf9aa50c",
+                "label": "Contact Form 7 Shortcode",
+                "name": "member_sign_up_contact_form_7_shortcode",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -35,26 +62,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Request for Volunteers",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5c5a8ec96d217",
-                "label": "Third Contact Form Title",
-                "name": "cf_title_3",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "General Inquiry",
+                "default_value": "",
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
@@ -66,17 +74,17 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "25"
+                    "value": "156"
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 30,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
-        "active": 1,
+        "active": true,
         "description": ""
     }
 ]
