@@ -4062,7 +4062,7 @@ input[type="button"].btn-block {
 .nav-tabs .nav-item.show .nav-link {
   color: #525252;
   background-color: #fff;
-  border-color: #525252 #525252 #fff;
+  border-color: #525252 #525252 #525252;
 }
 
 .nav-tabs .dropdown-menu {

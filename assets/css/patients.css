@@ -33,6 +33,11 @@ body {
   border-bottom-left-radius: 3rem !important;
 }
 
+.rounded-bottom-0 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .bg-grey {
   background: #F9F9F9;
 }
