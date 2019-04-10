@@ -1,25 +1,44 @@
 [
     {
-        "key": "group_5c4ffd4d423a5",
-        "title": "Footer",
+        "key": "group_5c8e9a5a00752",
+        "title": "Contact Forms",
         "fields": [
             {
-                "key": "field_5c4ffe0fac4e7",
-                "label": "Footer Left Column",
-                "name": "footer_left_column",
+                "key": "field_5c8e9b5e3dc5b",
+                "label": "Form 1",
+                "name": "form_1",
                 "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "33.3",
+                    "width": "33.33",
                     "class": "",
                     "id": ""
                 },
                 "layout": "block",
                 "sub_fields": [
                     {
-                        "key": "field_5c4ffe59ac4e8",
+                        "key": "field_5c8e9b9c3dc5c",
+                        "label": "Enable",
+                        "name": "enable",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5c8e9baf3dc5d",
                         "label": "Title",
                         "name": "title",
                         "type": "text",
@@ -38,10 +57,10 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c4ffe64ac4e9",
-                        "label": "Content",
-                        "name": "content",
-                        "type": "textarea",
+                        "key": "field_5c8e9bbf3dc5e",
+                        "label": "Shortcode",
+                        "name": "shortcode",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -52,29 +71,48 @@
                         },
                         "default_value": "",
                         "placeholder": "",
-                        "maxlength": "",
-                        "rows": 14,
-                        "new_lines": "br"
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     }
                 ]
             },
             {
-                "key": "field_5c4ffec0b009a",
-                "label": "Footer Middle Column",
-                "name": "footer_middle_column",
+                "key": "field_5c8e9be83dc5f",
+                "label": "Form 2",
+                "name": "form_2",
                 "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "33.3",
+                    "width": "33.33",
                     "class": "",
                     "id": ""
                 },
                 "layout": "block",
                 "sub_fields": [
                     {
-                        "key": "field_5c4ffecab009b",
+                        "key": "field_5c8e9bfb3dc60",
+                        "label": "Enable",
+                        "name": "enable",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5c8e9c033dc61",
                         "label": "Title",
                         "name": "title",
                         "type": "text",
@@ -93,10 +131,10 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c4ffed4b009c",
-                        "label": "Content",
-                        "name": "content",
-                        "type": "textarea",
+                        "key": "field_5c8e9c073dc62",
+                        "label": "Shortcode",
+                        "name": "shortcode",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -107,29 +145,48 @@
                         },
                         "default_value": "",
                         "placeholder": "",
-                        "maxlength": "",
-                        "rows": 14,
-                        "new_lines": "br"
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     }
                 ]
             },
             {
-                "key": "field_5c4ffef02992e",
-                "label": "Footer Right Column",
-                "name": "footer_right_column",
+                "key": "field_5c8e9c223dc63",
+                "label": "Form 3",
+                "name": "form_3",
                 "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "33.3",
+                    "width": "33.33",
                     "class": "",
                     "id": ""
                 },
                 "layout": "block",
                 "sub_fields": [
                     {
-                        "key": "field_5c4ffefe2992f",
+                        "key": "field_5c8e9c303dc64",
+                        "label": "Enable",
+                        "name": "enable",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5c8e9c383dc65",
                         "label": "Title",
                         "name": "title",
                         "type": "text",
@@ -137,7 +194,7 @@
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "100",
+                            "width": "",
                             "class": "",
                             "id": ""
                         },
@@ -148,63 +205,15 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c5003ef8bb05",
-                        "label": "Facebook Link",
-                        "name": "facebook_link",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "50",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "url"
-                    },
-                    {
-                        "key": "field_5c5003e78bb04",
-                        "label": "Twitter Link",
-                        "name": "twitter_link",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "50",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "url"
-                    },
-                    {
-                        "key": "field_5c5002b01cdaa",
-                        "label": "Email Address",
-                        "name": "email_address",
-                        "type": "email",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "100",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": ""
-                    },
-                    {
-                        "key": "field_5c5002fb95f3b",
-                        "label": "Button Label",
-                        "name": "button_label",
+                        "key": "field_5c8e9c423dc66",
+                        "label": "Shortcode",
+                        "name": "shortcode",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "50",
+                            "width": "",
                             "class": "",
                             "id": ""
                         },
@@ -213,21 +222,6 @@
                         "prepend": "",
                         "append": "",
                         "maxlength": ""
-                    },
-                    {
-                        "key": "field_5c5003642efe5",
-                        "label": "Button Link",
-                        "name": "button_link",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "50",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "url"
                     }
                 ]
             }
@@ -235,13 +229,13 @@
         "location": [
             [
                 {
-                    "param": "options_page",
+                    "param": "page",
                     "operator": "==",
-                    "value": "acf-options-footer"
+                    "value": "158"
                 }
             ]
         ],
-        "menu_order": 100,
+        "menu_order": 50,
         "position": "normal",
         "style": "default",
         "label_placement": "top",

@@ -24,7 +24,7 @@ if (get_field('enable_more_about_pie')):
           $content = '<h3>' . get_sub_field('title') . '</h3>' . get_sub_field('content');
           $image = 'style="background-image: url(' . get_sub_field('image') . ')"';
           ?>
-          <div class="row my-5">
+          <div class="row py-4">
             <div class="col-12 <?php if ($isLeft) { echo 'col-md-5 stretch-left-md-5 rounded-right-5 background-image more-about-pie-image'; } else { echo 'col-md-7 order-last order-md-first'; } ?>" <?php if ($isLeft) { echo $image; } ?>>
               <?php if (!$isLeft): ?>
                 <div class="<?php echo $contentClasses ?>">

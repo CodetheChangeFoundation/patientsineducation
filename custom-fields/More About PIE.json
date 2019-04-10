@@ -138,17 +138,17 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "11"
+                    "value": "154"
                 }
             ]
         ],
-        "menu_order": 2,
+        "menu_order": 21,
         "position": "normal",
         "style": "default",
-        "label_placement": "top",
+        "label_placement": "left",
         "instruction_placement": "label",
         "hide_on_screen": "",
-        "active": 1,
+        "active": true,
         "description": ""
     }
 ]

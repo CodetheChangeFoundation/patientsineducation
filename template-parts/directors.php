@@ -7,7 +7,7 @@
 ?>
 <?php if (get_field('enable_directors_grid')): ?>
   <div class="bg-grey">
-    <div class="container">
+    <div class="container pt-4">
       <div class="row">
         <div class="col-12">
           <h1><?php the_field('board_of_directors_title') ?></h1>
