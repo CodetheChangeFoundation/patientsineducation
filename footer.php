@@ -11,15 +11,6 @@
       $rightColumn = get_field('footer_right_column', 'option');
       ?>
       <footer class="text-white">
-        <!-- <div class="bg-secondary">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <p class="my-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla odio, facilisis quis dapibus sed, dictum sed elit.” – Patients In Education</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="bg-dark">
           <div class="container pt-5">
             <div class="row">
@@ -35,7 +26,7 @@
                 <h5><?php echo $rightColumn['title']; ?></h5>
                 <div>
                   <?php if ($rightColumn['facebook_link']):; ?>
-                    <a href="<?php echo $rightColumn['facebook_link']; ?>">
+                    <a href="<?php echo $rightColumn['facebook_link']; ?>" target="_blank">
                       <img class="img-fluid-icon pie-social-icon" src="<?php echo do_shortcode('[get_icon_url image="fb-icon.png"]');?>" alt="Facebook" />
                     </a>
                   <?php endif; ?>
