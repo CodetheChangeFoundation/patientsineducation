@@ -18,7 +18,7 @@ if (have_posts()):
           <div class="row">
             <div class="col-12 text-center px-5">
               <h2><?php the_title(); ?></h2>
-              <h5><?php echo strip_tags(get_the_content(),'<br>'); ?></h5>
+              <h5><?php echo strip_tags(get_the_content(),'<br><em><strong><b><i>'); ?></h5>
             </div>
           </div>
         </div>
