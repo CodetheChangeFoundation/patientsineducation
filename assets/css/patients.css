@@ -49,6 +49,16 @@ body {
   background-position: center center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .overflow-sm-visible {
+    overflow: visible;
+  }
+}
+
 /* Navigation bar */
 .navbar ul, ul.nav-tabs {
   font-family: unset;
