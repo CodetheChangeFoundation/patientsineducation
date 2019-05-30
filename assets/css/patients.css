@@ -363,6 +363,7 @@ a.cftab:hover {
     color: inherit !important;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom: 1px solid white !important;
   }
 }
 
