@@ -61,8 +61,8 @@ body {
 
 /* Navigation bar */
 .navbar ul, ul.nav-tabs {
-  font-family: unset;
-  font-weight: unset;
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-weight: 600;
 }
 
 .navbar li > a {
