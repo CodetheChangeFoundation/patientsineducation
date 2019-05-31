@@ -124,9 +124,33 @@ a.cftab:hover {
 
 /* Under navbar section */
 .pie-under-navbar {
+  position: relative;
+  padding-bottom: 125px;
+  overflow: hidden;
+  background: rgb(255, 105, 105);
+  background: -moz-linear-gradient(90deg, rgba(255, 105, 105, 1) 0%, rgba(254, 169, 69, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 105, 105, 1) 0%, rgba(254, 169, 69, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 105, 105, 1) 0%, rgba(254, 169, 69, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6969", endColorstr="#fea945", GradientType=1);
+}
+
+.pie-under-navbar:after {
+  content: "";
+  position: absolute;
   background-image: url(/wp-content/themes/patientsineducation/assets/svg/wave.svg);
-  background-size: 100% 100%;
-  padding-bottom: 6rem;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 125px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+}
+
+@media (min-width: 1400px) {
+  .pie-under-navbar:after {
+    background-position: center top;
+  }
 }
 
 /* Carousel */
