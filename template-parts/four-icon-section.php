@@ -22,14 +22,14 @@ if (get_field('enable_four_icon_section')):
             <?php
             $horizontal_positions = array('left','right');
             foreach ($horizontal_positions as $horizontal_position) { ?>
-              <div class="col-md-6 mb-4">
-                <div class="image-title-cointainer text-left">
+              <div class="col-12 col-md-6 mb-4">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
                   <?php if (get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')): ?>
-                    <div class="four-icon-section-image rounded-circle inline-vertical-middle" style="background-image: url(<?php echo get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')['url']; ?>)"></div>
+                    <div class="four-icon-section-image rounded-circle" style="background-image: url(<?php echo get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')['url']; ?>)"></div>
                   <?php endif ?>
 
                   <?php if (get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title')): ?>
-                      <h3 class="ml-3 font-weight-bold inline-vertical-middle"><?php the_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title') ?></h3>
+                      <h3 class="ml-0 ml-sm-3 font-weight-bold"><?php the_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title') ?></h3>
                   <?php endif ?>
                 </div>
 

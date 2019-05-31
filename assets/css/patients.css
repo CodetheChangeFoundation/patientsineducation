@@ -183,15 +183,6 @@ a.cftab:hover {
   overflow: hidden;
 }
 
-.image-title-cointainer {
-  padding-left: 22%;
-}
-
-.inline-vertical-middle {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /* Organization section */
 .organizations-section-image {
   background-position: center;
