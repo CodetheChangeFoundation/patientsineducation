@@ -65,7 +65,7 @@ function changeClass($classes) {
    var i = 3;
    var outreachElement = $(`#outreach-${i}`);
    while (outreachElement[0] !== undefined) {
-      outreachElement[0].classList.value = $classes;
+      outreachElement[0].className = $classes;
       i++;
       outreachElement = $(`#outreach-${i}`);
    }
