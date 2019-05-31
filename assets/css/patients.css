@@ -347,6 +347,17 @@ a.cftab:hover {
   color: #000;
 }
 
+/* Contact Us Page */
+@media (min-width: 992px) {
+  .nav-lg-tabs li a.active {
+    background: #FFFFFF !important;
+    color: inherit !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid white !important;
+  }
+}
+
 /* Footer */
 .img-fluid-icon {
   max-width: 2rem;

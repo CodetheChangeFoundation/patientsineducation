@@ -15,8 +15,8 @@
   <div class="border-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-9">
-          <ul class="nav nav-tabs nav-justified border-0" role="tablist">
+        <div class="col-12 col-md-8 col-lg-9 mb-1 mb-md-3 mb-lg-0">
+          <ul class="nav nav-pills nav-lg-tabs flex-column flex-lg-row nav-justified border-0" role="tablist">
             <?php if ($form1['enable']): ?>
               <li class="nav-item mt-3 mx-1 border-bottom-0 rounded-top rounded-bottom-0">
                 <a class="nav-link border-bottom-0 rounded-top rounded-bottom-0 cftab btn active px-4" id="patients-tab" data-toggle="tab" href="#patients-form" role="tab" aria-controls="patients-form" aria-selected="true"><?php echo $form1['title']; ?></a>
@@ -34,7 +34,7 @@
             <?php endif; ?>
           </ul>
         </div>
-        <div class="col-12 col-md-3 my-2 justify-content-center align-items-center d-flex">
+        <div class="col-12 col-md-4 col-lg-3 my-2 justify-content-center align-items-center d-flex">
           <a class="btn btn-primary" href="mailto:patients.in.education@gmail.com">Email Us Directly</a>
         </div>
       </div>
