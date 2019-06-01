@@ -36,11 +36,13 @@ if (get_field('enable_organizations')):
                 <?php if (!empty(get_sub_field('name'))): ?>
                   <tr>
                     <td>
-                      <div
-                        style="background-image: url(<?php echo the_sub_field('image')['url']; ?>);"
-                        class="organizations-section-image rounded-circle"
-                      >
-                      </div>
+                      <?php 
+                      $image = get_sub_field('image');
+                      if ($image): ?>
+                        <div class="organizations-section-image rounded-circle">
+                          <img class="img-fluid img-cover h-100 rounded-circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                        </div>
+                      <?php endif ?>
                     </td>
 
                     <td>

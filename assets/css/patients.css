@@ -53,6 +53,21 @@ body {
   overflow: hidden;
 }
 
+.img-cover {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.compat-object-fit {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.compat-object-fit img {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .overflow-sm-visible {
     overflow: visible;
@@ -175,9 +190,6 @@ a.cftab:hover {
 
 /*  Help Section */
 .help-section-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 150px;
   width: 150px;
   margin: 0 auto 20px;
@@ -195,9 +207,6 @@ a.cftab:hover {
 
 /* Four icon section */
 .four-icon-section-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100px;
   width: 100px;
 }
@@ -292,6 +301,16 @@ a.cftab:hover {
   min-height: 12rem;
 }
 
+.more-about-pie-image img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @media (min-width: 768px) {
   .stretch-left-md-5 {
     left: calc(-1 * (100vw - 100%) / 2);
@@ -354,7 +373,7 @@ a.cftab:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .directors-grid figure:hover img {

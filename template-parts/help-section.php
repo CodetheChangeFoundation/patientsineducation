@@ -16,8 +16,12 @@ if (get_field('enable_help_section') && get_field('help_section_title')):
           foreach ($positions as $position) {
           ?>
             <div class="col-md-4 col-xs-12">
-              <?php if (get_field('hs_' . $position . '_column_image')): ?>
-                <div style="background-image: url(<?php echo get_field('hs_' . $position . '_column_image')['url']; ?>)" class="help-section-image rounded-circle"></div>
+              <?php 
+              $image = get_field('hs_' . $position . '_column_image');
+              if ($image): ?>
+                <div class="help-section-image rounded-circle">
+                  <img class="img-fluid img-cover h-100 rounded-circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                </div>
               <?php endif; ?>
 
               <?php if (get_field('hs_' . $position .'_column_title')): ?>

@@ -24,8 +24,12 @@ if (get_field('enable_four_icon_section')):
             foreach ($horizontal_positions as $horizontal_position) { ?>
               <div class="col-12 col-md-6 mb-4">
                 <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
-                  <?php if (get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')): ?>
-                    <div class="four-icon-section-image rounded-circle" style="background-image: url(<?php echo get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image')['url']; ?>)"></div>
+                  <?php 
+                  $image = get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_image');
+                  if ($image): ?>
+                    <div class="four-icon-section-image rounded-circle">
+                      <img class="img-fluid img-cover h-100 rounded-circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    </div>
                   <?php endif ?>
 
                   <?php if (get_field('fi_' . $vertical_position . '_' . $horizontal_position .'_title')): ?>
