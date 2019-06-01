@@ -22,7 +22,7 @@ if (get_field('enable_outreach_section')):
         if ($i == 3):
         ?>
           <div class="col-12 pt-3 pb-3">
-            <a class="btn btn-primary" id="outreach-archive">Show Archived</a>
+            <button class="btn btn-primary" id="outreach-archive">Show Archived</button>
           </div>
         <?php endif; ?>
         <?php if (!empty(get_sub_field('image')) && !empty(get_sub_field('content'))): ?>
