@@ -9,32 +9,20 @@ if (get_field('enable_carousel')):
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <?php
-      $first = true;
       $index = 0;
-      while (have_rows('carousel_image')): the_row();
-      ?>
-        <li data-target="#carousel" data-slide-to="<?php echo $index ?>" class="<?php if ($first): echo 'active'; endif; ?>"></li>
-      <?php
-        $first = false;
-        $index++;
-      endwhile;
-      ?>
+      while (have_rows('carousel_image')): the_row(); ?>
+        <li data-target="#carousel" data-slide-to="<?php echo $index ?>" class="<?php if ($index++ == 0) { echo 'active'; } ?>"></li>
+      <?php endwhile; ?>
     </ol>
 
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
       <?php
       $first = true;
-      while (have_rows('carousel_image')): the_row();
-      ?>
-        <div
-          class="carousel-item <?php if ($first): echo 'active'; endif; ?>"
-          style="background-image: url('<?php echo get_sub_field('image')['url']; ?>');"
-        >
+      while (have_rows('carousel_image')): the_row(); ?>
+        <div class="carousel-item background-image <?php if ($first) { echo 'active'; } ?>">
+          <img class="d-block h-100 w-100 img-fluid img-cover" src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['alt']; ?>">
         </div>
-      <?php
-        $first = false;
-      endwhile;
-      ?>
+      <?php $first = false; endwhile; ?>
     </div>
 
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">

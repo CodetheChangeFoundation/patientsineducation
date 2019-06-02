@@ -43,10 +43,13 @@ body {
 }
 
 .background-image {
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .overflow-hidden {
@@ -172,11 +175,6 @@ a.cftab:hover {
 .carousel-item {
   height: 50vh;
   min-height: 16rem;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* Outreach Section */
@@ -244,10 +242,13 @@ a.cftab:hover {
   overflow: visible;
 }
 
+.project-container .project-image.compat-object-fit:before {
+  padding-top: 100%;
+}
+
 .project-container .project-image:before {
   content: "";
   display: block;
-  padding-top: 100%;
   position: relative;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
@@ -280,6 +281,10 @@ a.cftab:hover {
 .project-container .project-image:hover:after {
   opacity: 1;
   transition: all 200ms ease-in-out;
+}
+
+.project-image img {
+  border-radius: 0.4rem;
 }
 
 .project-container .project-image .project-description {
