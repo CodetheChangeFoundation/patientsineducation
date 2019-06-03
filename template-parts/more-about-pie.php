@@ -4,7 +4,6 @@
  *
  * @package patientsineducation
  */
-
 if (get_field('enable_more_about_pie')):
 ?>
   <div class="more-about-pie">
