@@ -4,8 +4,8 @@
  *
  * @package patientsineducation
  */
+if (get_field('enable_directors_grid')):
 ?>
-<?php if (get_field('enable_directors_grid')): ?>
   <div class="bg-grey">
     <div class="container pt-4">
       <div class="row">

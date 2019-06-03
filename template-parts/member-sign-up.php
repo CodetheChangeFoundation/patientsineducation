@@ -4,9 +4,8 @@
  *
  * @package patientsineducation
  */
+if (get_field('enable_member_sign_up')):
 ?>
-
-<?php if (get_field('enable_member_sign_up')): ?>
 <div class="container my-4">
   <div class="row">
     <div class="col-12">
