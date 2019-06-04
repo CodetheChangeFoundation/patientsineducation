@@ -8,7 +8,7 @@
 if (get_field('enable_organizations')):
 ?>
   <div class="container pt-4 pb-4">
-    <?php if(get_field('organizations_title')): ?>
+    <?php if (get_field('organizations_title')): ?>
       <h1 class="text-center pb-4"><?php the_field('organizations_title') ?></h1>
     <?php endif; ?>
 

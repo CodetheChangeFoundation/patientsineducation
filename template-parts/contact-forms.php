@@ -5,7 +5,6 @@
  * @package patientsineducation
  */
 
-
 $form1 = get_field('form_1');
 $form2 = get_field('form_2');
 $form3 = get_field('form_3');

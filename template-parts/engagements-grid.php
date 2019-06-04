@@ -7,23 +7,23 @@
 ?>
 
 <div class="container accordion mb-4" id="engagements">
-	<?php 
+	<?php
 	$args = array(
-		'post_type'=> 'engagements', 
-		'posts_per_page' => -1, 
+		'post_type'=> 'engagements',
+		'posts_per_page' => -1,
 		'meta_query' => array(
 			array(
 				'key' => '_thumbnail_id',
 				'compare' => 'EXISTS'
 			)
 		)
-	);           
+	);
 	$the_query = new WP_Query( $args );
 	if ($the_query->have_posts()):
 		$count = 0;
 		while ($the_query->have_posts()): $the_query->the_post();
 			$count++;
-			if ($count%3 == 1): 
+			if ($count%3 == 1):
 				$order_lg = $count + 3;
 			elseif ($count%3 == 2):
 				$order_lg = $count + 2;
@@ -69,7 +69,7 @@
 									if (!empty(get_field('link')['title'])):
 										echo get_field('link')['title'];
 									else:
-										echo "Learn More"; 
+										echo "Learn More";
 									endif;
 									?>
 									</a>
@@ -85,3 +85,5 @@
 		</div>
 	<?php endif; ?>
 </div>
+
+<?php wp_reset_postdata(); ?>

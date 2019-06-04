@@ -31,7 +31,7 @@ function isScrolledIntoView($elem) {
   if ($($elem).length) {
     var windowTop = $(window).scrollTop();
     var windowBottom = windowTop + $(window).height();
-    var elem = $elem.offset().top + $elem.height()/2;
+    var elem = $elem.offset().top + $elem.height() / 2;
     return ((elem <= windowBottom) && (elem >= windowTop));
   }
   return false;
@@ -61,7 +61,7 @@ $(document).ready(function () {
 // Outreach section
 var outreach = $('#outreach-archive');
 
-outreach.on('click', function() {
+outreach.on('click', function () {
   var archived = "Show Archived";
   var classes = "col-12 col-lg-4 pt-4";
   if (outreach[0].innerHTML == archived) {
