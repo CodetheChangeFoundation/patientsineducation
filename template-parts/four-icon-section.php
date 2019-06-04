@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_four_icon_section')):
 ?>
   <div class="four-icon-section-wave">
@@ -17,11 +18,11 @@ if (get_field('enable_four_icon_section')):
       <section>
         <?php
         $vertical_positions = array('top','bottom');
-        foreach ($vertical_positions as $vertical_position) { ?>
+        foreach ($vertical_positions as $vertical_position) : ?>
           <div class="row">
             <?php
             $horizontal_positions = array('left','right');
-            foreach ($horizontal_positions as $horizontal_position) { ?>
+            foreach ($horizontal_positions as $horizontal_position) : ?>
               <div class="col-12 col-md-6 mb-4">
                 <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
                   <?php 
@@ -43,9 +44,9 @@ if (get_field('enable_four_icon_section')):
                   <?php endif ?>
                 </div>
               </div>
-            <?php } ?>
+            <?php endforeach; ?>
           </div>
-        <?php } ?>
+        <?php endforeach; ?>
       </section>
     </div>
   </div>

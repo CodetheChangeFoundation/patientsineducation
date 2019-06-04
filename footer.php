@@ -4,8 +4,7 @@
  *
  * @package patientsineducation
  */
-?>
-      <?php
+
       $leftColumn = get_field('footer_left_column', 'option');
       $middleColumn = get_field('footer_middle_column', 'option');
       $rightColumn = get_field('footer_right_column', 'option');

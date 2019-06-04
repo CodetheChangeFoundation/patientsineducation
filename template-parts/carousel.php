@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_carousel')):
 ?>
   <div id="carousel" class="carousel slide" data-ride="carousel">

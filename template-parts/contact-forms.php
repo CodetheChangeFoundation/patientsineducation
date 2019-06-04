@@ -4,13 +4,12 @@
  *
  * @package patientsineducation
  */
-?>
 
-<?php 
-  $form1 = get_field('form_1');
-  $form2 = get_field('form_2');
-  $form3 = get_field('form_3');
-  if ($form1['enable'] || $form2['enable'] || $form3['enable']):
+
+$form1 = get_field('form_1');
+$form2 = get_field('form_2');
+$form3 = get_field('form_3');
+if ($form1['enable'] || $form2['enable'] || $form3['enable']):
 ?>
   <div class="border-bottom">
     <div class="container">

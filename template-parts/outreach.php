@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_outreach_section')):
 ?>
   <div class="container py-4">

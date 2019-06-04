@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_help_section') && get_field('help_section_title')):
 ?>
   <div class="bg-grey pt-4">
@@ -13,7 +14,7 @@ if (get_field('enable_help_section') && get_field('help_section_title')):
         <div class="row">
           <?php
           $positions = array('left', 'middle', 'right');
-          foreach ($positions as $position) {
+          foreach ($positions as $position) :
           ?>
             <div class="col-md-4 col-xs-12">
               <?php 
@@ -32,7 +33,7 @@ if (get_field('enable_help_section') && get_field('help_section_title')):
                   <p><?php the_field('hs_' . $position .'_column_text') ?><p>
               <?php endif; ?>
             </div>
-          <?php } ?>
+          <?php endforeach; ?>
         </div>
       </section>
     </div>

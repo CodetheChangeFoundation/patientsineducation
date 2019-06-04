@@ -19,7 +19,7 @@ if (get_field('enable_more_about_pie')):
       <?php while (have_rows('more_about_pie')): the_row(); ?>
         <?php if (!empty(get_sub_field('image') && !empty(get_sub_field('content')))): ?>
           <?php
-          $isLeft = ($index % 2 == 1);
+          $isLeft = ($index++ % 2 == 1);
           $contentClasses = 'border rounded-left-5 rounded-right-5 px-5 py-4 mt-4 mt-md-0';
           $content = '<h3>' . get_sub_field('title') . '</h3>' . get_sub_field('content');
           $image = get_sub_field('image');
@@ -44,7 +44,7 @@ if (get_field('enable_more_about_pie')):
               <?php endif; ?>
             </div>
           </div>
-        <?php $index++; endif; ?>
+        <?php endif; ?>
       <?php endwhile; ?>
     </div>
   </div>

@@ -26,4 +26,4 @@ function pie_load_bootstrap_scripts() {
   wp_enqueue_script('bootstrap');
 }
 add_action('wp_enqueue_scripts', 'pie_load_bootstrap_scripts');
-add_action( 'wp_enqueue_scripts', 'patients_load_scripts' );
+add_action('wp_enqueue_scripts', 'patients_load_scripts');
