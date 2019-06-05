@@ -37,14 +37,17 @@
 				$order_md = $count + 1;
 			endif;
 
-			if (has_post_thumbnail()): ?>
-				<?php if ($count == 1): ?>
+			if (has_post_thumbnail()):
+				$image_id = get_post_thumbnail_id();
+				$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+				if ($count == 1): ?>
 					<div class="row">
 				<?php endif; ?>
 					<div class="project-container mb-4 col-12 col-md-6 col-lg-4 order-md-<?php echo $count; ?> order-lg-<?php echo $count; ?>">
 						<a class="show-more-button text-body" data-toggle="collapse" href="#<?php echo $post->post_name; ?>" role="button"
 							aria-expanded="false" aria-controls="<?php echo $post->post_name; ?>">
-							<div class="project-image border rounded-2 mt-4" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);">
+							<div class="project-image border rounded-2 mt-4">
+								<img class="img-fluid img-cover" src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php $image_alt ?>">
 								<div class="project-description px-3 py-2 rounded-2 bg-light">
 									<h4 class="m-0"><?php the_title(); ?></h4>
 									<h6 class="m-0"><?php the_field('short_description'); ?></h6>

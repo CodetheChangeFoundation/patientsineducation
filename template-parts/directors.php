@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_directors_grid')):
 ?>
   <div class="bg-grey">
@@ -17,14 +18,14 @@ if (get_field('enable_directors_grid')):
         <?php
         if (get_field('enable_directors_grid')):
           while (have_rows('director')): the_row();
-        ?>
+            ?>
             <div class="col-12 col-sm-6 col-lg-4 text-center pb-5">
               <?php
               $image = get_sub_field('image');
               $name = get_sub_field('name');
               $desc = get_sub_field('description');
               if (!empty($image) && !empty($name) && !empty($desc)):
-              ?>
+                ?>
                 <figure class="m-auto">
                   <div>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-100 d-block"/>

@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_paragraph') && get_field('paragraph_title')):
 ?>
   <div class="container py-4">

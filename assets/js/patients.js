@@ -2,6 +2,18 @@
 // Scripts
 //
 
+// Object-fit fallback
+if (!Modernizr.objectfit) {
+  $('.img-cover').each(function() {
+    var container = $(this).parent();
+    var imgUrl = $(this).prop('src');
+    if (imgUrl) {
+      container.css('backgroundImage', 'url(' + imgUrl + ')');
+      container.addClass('compat-object-fit');
+    }
+  });
+}
+
 // Engagements page
 $('.show-more-button').on('click', function (event) {
   $('.collapse.show').collapse('show');

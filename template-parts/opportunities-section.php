@@ -4,6 +4,7 @@
  *
  * @package patientsineducation
  */
+
 if (get_field('enable_opportunities_section')):
 ?>
   <div class="pt-4 pb-4 px-5 bg-grey" id="opportunities">

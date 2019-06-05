@@ -43,14 +43,32 @@ body {
 }
 
 .background-image {
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.img-cover {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.compat-object-fit {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.compat-object-fit img {
+  display: none;
 }
 
 @media (min-width: 576px) {
@@ -157,11 +175,6 @@ a.cftab:hover {
 .carousel-item {
   height: 50vh;
   min-height: 16rem;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* Outreach Section */
@@ -175,9 +188,6 @@ a.cftab:hover {
 
 /*  Help Section */
 .help-section-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 150px;
   width: 150px;
   margin: 0 auto 20px;
@@ -195,9 +205,6 @@ a.cftab:hover {
 
 /* Four icon section */
 .four-icon-section-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100px;
   width: 100px;
 }
@@ -235,10 +242,13 @@ a.cftab:hover {
   overflow: visible;
 }
 
+.project-container .project-image.compat-object-fit:before {
+  padding-top: 100%;
+}
+
 .project-container .project-image:before {
   content: "";
   display: block;
-  padding-top: 100%;
   position: relative;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
@@ -273,6 +283,10 @@ a.cftab:hover {
   transition: all 200ms ease-in-out;
 }
 
+.project-image img {
+  border-radius: 0.4rem;
+}
+
 .project-container .project-image .project-description {
   bottom: 0;
   left: 0;
@@ -290,6 +304,16 @@ a.cftab:hover {
 /* About Us */
 .more-about-pie-image {
   min-height: 12rem;
+}
+
+.more-about-pie-image img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -354,7 +378,7 @@ a.cftab:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .directors-grid figure:hover img {
