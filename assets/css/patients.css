@@ -140,6 +140,10 @@ a.cftab:hover {
   text-decoration: none;
 }
 
+.navbar-spacer {
+  padding-top: 4.9375rem;
+}
+
 /* Under navbar section */
 .pie-under-navbar {
   position: relative;
