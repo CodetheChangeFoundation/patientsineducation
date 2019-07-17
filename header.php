@@ -48,7 +48,10 @@
 
       <nav class="navbar navbar-expand-md navbar-light bg-primary py-3 sticky-top border-bottom border-white">
         <div class="container">
-          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">Patients in Education</a>
+          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">
+            <img src="<?php echo( get_header_image() ); ?>" width="50" height="50" class="d-inline-block align-center mr-2" alt="PIE Logo">
+            <?php echo( get_bloginfo( 'title' ) ); ?>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,7 +63,7 @@
               'container_id'    => 'bs4navbar',
               'container_class' => 'collapse navbar-collapse',
               'menu_id'         => false,
-              'menu_class'      => 'navbar-nav ml-auto px-3',
+              'menu_class'      => 'navbar-nav ml-auto',
               'depth'           => 2,
               'fallback_cb'     => 'bs4navwalker::fallback',
               'walker'          => new bs4navwalker()
