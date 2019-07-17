@@ -23,27 +23,35 @@
   </head>
 
   <body <?php body_class() ?>>
-    <?php
-    $upcomingEvent = get_field('upcoming_event', 'option');
-    if (is_front_page() && $upcomingEvent['name']): 
-    ?>
-      <div id="notification-banner" class="bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-white text-center d-flex flex-row align-items-center justify-content-center py-1">
-              <h5 class="m-0"><?php echo $upcomingEvent['name']; ?> <?php if ($upcomingEvent['date']): ?>on <?php echo $upcomingEvent['date']; endif;?></h5>
-              <?php if ($upcomingEvent['button_text']): ?>
-                <a class="text-dark btn btn-primary btn-sm ml-4" role="button" href="<?php echo $upcomingEvent['button_link']; ?>"><?php echo $upcomingEvent['button_text']; ?></a>
-              <?php endif; ?>
-            </div>
+    <div class="container-fluid p-0">
+      <?php if (is_front_page() && have_rows('home_page_ticker', 'option')): ?>
+        <div id="ticker" class="carousel slide bg-dark" data-ride="carousel" data-interval="7500">
+          <div class="carousel-inner container">
+            <?php
+            $i = 0;
+            while ( have_rows('home_page_ticker', 'option') ) : the_row();
+            ?>
+
+              <div class="carousel-item <?php echo $i++==0 ? 'active' : '' ?>">
+                <div class="d-flex w-100 justify-content-center align-items-center h-100">
+                  <h5 class="m-0 text-white"><?php the_sub_field('title') ?> <?php if (get_sub_field('date')): ?>on <?php the_sub_field('date'); endif;?></h5>
+                  <?php $button = get_sub_field('button'); if ($button): ?>
+                    <a class="text-dark btn btn-primary btn-sm ml-4" role="button" href="<?php echo $button['url'] ?>"><?php echo $button['title'] ?></a>
+                  <?php endif; ?>
+                </div>
+              </div>
+
+            <?php endwhile; ?>
           </div>
         </div>
-      </div>
-    <?php endif; ?>
-    <div class="container-fluid p-0">
+      <?php endif; ?>
+
       <nav class="navbar navbar-expand-md navbar-light bg-primary py-3 sticky-top border-bottom border-white">
         <div class="container">
-          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">Patients in Education</a>
+          <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">
+            <img src="<?php echo( get_header_image() ); ?>" width="50" height="50" class="d-inline-block align-center mr-2" alt="PIE Logo">
+            <?php echo( get_bloginfo( 'title' ) ); ?>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,7 +63,7 @@
               'container_id'    => 'bs4navbar',
               'container_class' => 'collapse navbar-collapse',
               'menu_id'         => false,
-              'menu_class'      => 'navbar-nav ml-auto px-3',
+              'menu_class'      => 'navbar-nav ml-auto',
               'depth'           => 2,
               'fallback_cb'     => 'bs4navwalker::fallback',
               'walker'          => new bs4navwalker()

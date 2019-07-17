@@ -7,7 +7,7 @@
 
 if (get_field('enable_opportunities_section')):
 ?>
-  <div class="pt-4 pb-4 px-5 bg-grey" id="opportunities">
+  <div class="pt-4 pb-4 px-5" id="opportunities">
     <div class="container">
       <?php if (get_field('opportunities_title')): ?>
         <h1 class="text-center pb-4"><?php the_field('opportunities_title') ?></h1>

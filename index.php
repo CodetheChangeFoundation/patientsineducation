@@ -46,6 +46,7 @@ if (have_posts()):
   endif;
 ?>
 
+<?php get_template_part('template-parts/committees-section')?>
 <?php get_template_part('template-parts/opportunities-section')?>
 
 <?php get_footer(); ?>
