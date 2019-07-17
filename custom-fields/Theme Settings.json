@@ -4,10 +4,10 @@
         "title": "Theme Settings",
         "fields": [
             {
-                "key": "field_5c53df88cf67d",
-                "label": "Upcoming Event",
-                "name": "upcoming_event",
-                "type": "group",
+                "key": "field_5d2bdeea5d916",
+                "label": "Home Page Ticker",
+                "name": "home_page_ticker",
+                "type": "repeater",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -16,18 +16,22 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "block",
+                "collapsed": "field_5d2be9165d917",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
                 "sub_fields": [
                     {
-                        "key": "field_5c53dfbacf67e",
-                        "label": "Event Name",
-                        "name": "name",
+                        "key": "field_5d2bea0319e48",
+                        "label": "Title",
+                        "name": "title",
                         "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "50",
+                            "width": "",
                             "class": "",
                             "id": ""
                         },
@@ -38,55 +42,36 @@
                         "maxlength": ""
                     },
                     {
-                        "key": "field_5c53dfd8cf67f",
-                        "label": "Event Date",
+                        "key": "field_5d2bea2219e49",
+                        "label": "Date",
                         "name": "date",
                         "type": "date_picker",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "50",
+                            "width": "",
                             "class": "",
                             "id": ""
                         },
-                        "display_format": "F j, Y",
-                        "return_format": "F j, Y",
-                        "first_day": 0
+                        "display_format": "d\/m\/Y",
+                        "return_format": "d\/m\/Y",
+                        "first_day": 1
                     },
                     {
-                        "key": "field_5c53e002cf680",
-                        "label": "Button Text",
-                        "name": "button_text",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "50",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    },
-                    {
-                        "key": "field_5c53e00fcf681",
-                        "label": "Button Link",
-                        "name": "button_link",
+                        "key": "field_5d2bea3119e4a",
+                        "label": "Button",
+                        "name": "button",
                         "type": "link",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "50",
+                            "width": "",
                             "class": "",
                             "id": ""
                         },
-                        "return_format": "url"
+                        "return_format": "array"
                     }
                 ]
             }
