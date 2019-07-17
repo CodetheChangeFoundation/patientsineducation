@@ -1,10 +1,9 @@
 # Patients in Education
 
-Meetings are Saturdays from 12:00pm to 3:00 pm in SCRF 201.
 WordPress custom theme for Patients in Education.
 
 ## Tech Stack
-- HTML, CSS, PHP, JS, Bootstrap, Wordpress - Front End
+- HTML, CSS, PHP, JS, Bootstrap, Wordpress
 
 ## Getting Started
 List of steps to take to initialize the project.
