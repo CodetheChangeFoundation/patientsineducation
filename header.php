@@ -49,7 +49,10 @@
       <nav class="navbar navbar-expand-md navbar-light bg-primary py-3 sticky-top border-bottom border-white">
         <div class="container">
           <a class="navbar-brand font-weight-bold" href="<?php echo get_home_url() ?>">
-            <img src="<?php echo( get_header_image() ); ?>" width="50" height="50" class="d-inline-block align-center mr-2" alt="PIE Logo">
+            <?php if(get_header_image()): ?>
+              <img src="<?php echo( get_header_image() ); ?>" width="50" height="50" class="d-inline-block align-center mr-2" alt="PIE Logo">
+            <?php endif; ?>
+
             <?php echo( get_bloginfo( 'title' ) ); ?>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
